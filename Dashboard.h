@@ -95,16 +95,21 @@ namespace POO {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
 			this->ClientSize = System::Drawing::Size(1944, 1248);
 			this->Controls->Add(this->panel);
 			this->Controls->Add(this->panel1);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->Name = L"Dashboard";
 			this->Text = L"Dashboard";
+			this->Load += gcnew System::EventHandler(this, &Dashboard::Dashboard_Load);
 			this->panel->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
+	private: System::Void Dashboard_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
 	};
 }
