@@ -64,14 +64,14 @@ namespace POO {
 	private: System::Windows::Forms::Button^ Btn_Gestion_stat;
 	private: System::Windows::Forms::Button^ Btn_Exit_DB;
 	private: System::Windows::Forms::Panel^ panel_gestion;
-	private: System::Windows::Forms::Panel^ Pannel_Dashboard;
-	private: System::Windows::Forms::Label^ Dashboard_Text;
-	private: System::Windows::Forms::Panel^ panel_Gestion_Personnel;
-	private: System::Windows::Forms::Label^ Title_Gestion_Personnel;
-	private: System::Windows::Forms::Panel^ Panel_Gestion_Client;
 
 
-	private: System::Windows::Forms::Label^ Title_Gestion_Clients;
+
+
+
+
+
+
 
 
 
@@ -100,17 +100,7 @@ namespace POO {
 			this->Btn_Gestion_stat = (gcnew System::Windows::Forms::Button());
 			this->Btn_Exit_DB = (gcnew System::Windows::Forms::Button());
 			this->panel_gestion = (gcnew System::Windows::Forms::Panel());
-			this->Pannel_Dashboard = (gcnew System::Windows::Forms::Panel());
-			this->panel_Gestion_Personnel = (gcnew System::Windows::Forms::Panel());
-			this->Panel_Gestion_Client = (gcnew System::Windows::Forms::Panel());
-			this->Title_Gestion_Clients = (gcnew System::Windows::Forms::Label());
-			this->Title_Gestion_Personnel = (gcnew System::Windows::Forms::Label());
-			this->Dashboard_Text = (gcnew System::Windows::Forms::Label());
-			this->Pannel_Titre->SuspendLayout();
 			this->panel_gestion->SuspendLayout();
-			this->Pannel_Dashboard->SuspendLayout();
-			this->panel_Gestion_Personnel->SuspendLayout();
-			this->Panel_Gestion_Client->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// label1
@@ -129,12 +119,11 @@ namespace POO {
 			// 
 			// Pannel_Titre
 			// 
-			this->Pannel_Titre->Controls->Add(this->Panel_Gestion_Client);
 			this->Pannel_Titre->Dock = System::Windows::Forms::DockStyle::Top;
 			this->Pannel_Titre->Location = System::Drawing::Point(0, 0);
-			this->Pannel_Titre->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->Pannel_Titre->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Pannel_Titre->Name = L"Pannel_Titre";
-			this->Pannel_Titre->Size = System::Drawing::Size(488, 222);
+			this->Pannel_Titre->Size = System::Drawing::Size(366, 178);
 			this->Pannel_Titre->TabIndex = 0;
 			// 
 			// Btn_Gestion_Personnel
@@ -146,10 +135,10 @@ namespace POO {
 				static_cast<System::Byte>(0)));
 			this->Btn_Gestion_Personnel->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Gestion_Personnel->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Gestion_Personnel->Location = System::Drawing::Point(0, 222);
-			this->Btn_Gestion_Personnel->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->Btn_Gestion_Personnel->Location = System::Drawing::Point(0, 178);
+			this->Btn_Gestion_Personnel->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Btn_Gestion_Personnel->Name = L"Btn_Gestion_Personnel";
-			this->Btn_Gestion_Personnel->Size = System::Drawing::Size(488, 131);
+			this->Btn_Gestion_Personnel->Size = System::Drawing::Size(366, 105);
 			this->Btn_Gestion_Personnel->TabIndex = 1;
 			this->Btn_Gestion_Personnel->Text = L"Gestion personnel";
 			this->Btn_Gestion_Personnel->UseVisualStyleBackColor = true;
@@ -163,10 +152,10 @@ namespace POO {
 			this->Btn_Gestion_clients->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->Btn_Gestion_clients->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Gestion_clients->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Gestion_clients->Location = System::Drawing::Point(0, 353);
-			this->Btn_Gestion_clients->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->Btn_Gestion_clients->Location = System::Drawing::Point(0, 283);
+			this->Btn_Gestion_clients->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Btn_Gestion_clients->Name = L"Btn_Gestion_clients";
-			this->Btn_Gestion_clients->Size = System::Drawing::Size(488, 131);
+			this->Btn_Gestion_clients->Size = System::Drawing::Size(366, 105);
 			this->Btn_Gestion_clients->TabIndex = 2;
 			this->Btn_Gestion_clients->Text = L"Gestion clients";
 			this->Btn_Gestion_clients->UseVisualStyleBackColor = true;
@@ -180,10 +169,10 @@ namespace POO {
 			this->btn_Gestion_commandes->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->btn_Gestion_commandes->ForeColor = System::Drawing::Color::Gainsboro;
 			this->btn_Gestion_commandes->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->btn_Gestion_commandes->Location = System::Drawing::Point(0, 484);
-			this->btn_Gestion_commandes->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->btn_Gestion_commandes->Location = System::Drawing::Point(0, 388);
+			this->btn_Gestion_commandes->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->btn_Gestion_commandes->Name = L"btn_Gestion_commandes";
-			this->btn_Gestion_commandes->Size = System::Drawing::Size(488, 131);
+			this->btn_Gestion_commandes->Size = System::Drawing::Size(366, 105);
 			this->btn_Gestion_commandes->TabIndex = 3;
 			this->btn_Gestion_commandes->Text = L"Gestion commandes";
 			this->btn_Gestion_commandes->UseVisualStyleBackColor = true;
@@ -197,10 +186,10 @@ namespace POO {
 			this->Btn_Gestion_stock->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->Btn_Gestion_stock->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Gestion_stock->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Gestion_stock->Location = System::Drawing::Point(0, 615);
-			this->Btn_Gestion_stock->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->Btn_Gestion_stock->Location = System::Drawing::Point(0, 493);
+			this->Btn_Gestion_stock->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Btn_Gestion_stock->Name = L"Btn_Gestion_stock";
-			this->Btn_Gestion_stock->Size = System::Drawing::Size(488, 131);
+			this->Btn_Gestion_stock->Size = System::Drawing::Size(366, 105);
 			this->Btn_Gestion_stock->TabIndex = 4;
 			this->Btn_Gestion_stock->Text = L"Gestion stock";
 			this->Btn_Gestion_stock->UseVisualStyleBackColor = true;
@@ -214,10 +203,10 @@ namespace POO {
 			this->Btn_Gestion_stat->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->Btn_Gestion_stat->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Gestion_stat->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Gestion_stat->Location = System::Drawing::Point(0, 746);
-			this->Btn_Gestion_stat->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->Btn_Gestion_stat->Location = System::Drawing::Point(0, 598);
+			this->Btn_Gestion_stat->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Btn_Gestion_stat->Name = L"Btn_Gestion_stat";
-			this->Btn_Gestion_stat->Size = System::Drawing::Size(488, 131);
+			this->Btn_Gestion_stat->Size = System::Drawing::Size(366, 105);
 			this->Btn_Gestion_stat->TabIndex = 5;
 			this->Btn_Gestion_stat->Text = L"Gestion statistiques";
 			this->Btn_Gestion_stat->UseVisualStyleBackColor = true;
@@ -231,10 +220,10 @@ namespace POO {
 			this->Btn_Exit_DB->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->Btn_Exit_DB->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Exit_DB->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Exit_DB->Location = System::Drawing::Point(0, 877);
-			this->Btn_Exit_DB->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->Btn_Exit_DB->Location = System::Drawing::Point(0, 703);
+			this->Btn_Exit_DB->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Btn_Exit_DB->Name = L"Btn_Exit_DB";
-			this->Btn_Exit_DB->Size = System::Drawing::Size(488, 131);
+			this->Btn_Exit_DB->Size = System::Drawing::Size(366, 105);
 			this->Btn_Exit_DB->TabIndex = 6;
 			this->Btn_Exit_DB->Text = L"Exit";
 			this->Btn_Exit_DB->UseVisualStyleBackColor = true;
@@ -252,105 +241,34 @@ namespace POO {
 			this->panel_gestion->Controls->Add(this->Pannel_Titre);
 			this->panel_gestion->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panel_gestion->Location = System::Drawing::Point(0, 0);
-			this->panel_gestion->Margin = System::Windows::Forms::Padding(5, 6, 5, 6);
+			this->panel_gestion->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->panel_gestion->Name = L"panel_gestion";
-			this->panel_gestion->Size = System::Drawing::Size(488, 1248);
+			this->panel_gestion->Size = System::Drawing::Size(366, 998);
 			this->panel_gestion->TabIndex = 0;
-			// 
-			// Pannel_Dashboard
-			// 
-			this->Pannel_Dashboard->Controls->Add(this->panel_Gestion_Personnel);
-			this->Pannel_Dashboard->Controls->Add(this->Dashboard_Text);
-			this->Pannel_Dashboard->Location = System::Drawing::Point(494, 0);
-			this->Pannel_Dashboard->Name = L"Pannel_Dashboard";
-			this->Pannel_Dashboard->Size = System::Drawing::Size(1672, 1223);
-			this->Pannel_Dashboard->TabIndex = 1;
-			// 
-			// panel_Gestion_Personnel
-			// 
-			this->panel_Gestion_Personnel->Controls->Add(this->Title_Gestion_Personnel);
-			this->panel_Gestion_Personnel->Location = System::Drawing::Point(12, 3);
-			this->panel_Gestion_Personnel->Name = L"panel_Gestion_Personnel";
-			this->panel_Gestion_Personnel->Size = System::Drawing::Size(1713, 1235);
-			this->panel_Gestion_Personnel->TabIndex = 0;
-			this->panel_Gestion_Personnel->Visible = false;
-			// 
-			// Panel_Gestion_Client
-			// 
-			this->Panel_Gestion_Client->Controls->Add(this->Title_Gestion_Clients);
-			this->Panel_Gestion_Client->Location = System::Drawing::Point(465, 227);
-			this->Panel_Gestion_Client->Name = L"Panel_Gestion_Client";
-			this->Panel_Gestion_Client->Size = System::Drawing::Size(1704, 1221);
-			this->Panel_Gestion_Client->TabIndex = 0;
-			this->Panel_Gestion_Client->Visible = false;
-			// 
-			// Title_Gestion_Clients
-			// 
-			this->Title_Gestion_Clients->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 25.875F, System::Drawing::FontStyle::Bold));
-			this->Title_Gestion_Clients->ForeColor = System::Drawing::Color::Gainsboro;
-			this->Title_Gestion_Clients->Location = System::Drawing::Point(367, 52);
-			this->Title_Gestion_Clients->Name = L"Title_Gestion_Clients";
-			this->Title_Gestion_Clients->Size = System::Drawing::Size(795, 166);
-			this->Title_Gestion_Clients->TabIndex = 1;
-			this->Title_Gestion_Clients->Text = L"Gestion Clients";
-			this->Title_Gestion_Clients->Click += gcnew System::EventHandler(this, &Dashboard::label2_Click_1);
-			// 
-			// Title_Gestion_Personnel
-			// 
-			this->Title_Gestion_Personnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 25.875F, System::Drawing::FontStyle::Bold));
-			this->Title_Gestion_Personnel->ForeColor = System::Drawing::Color::Gainsboro;
-			this->Title_Gestion_Personnel->Location = System::Drawing::Point(485, 65);
-			this->Title_Gestion_Personnel->Name = L"Title_Gestion_Personnel";
-			this->Title_Gestion_Personnel->Size = System::Drawing::Size(795, 166);
-			this->Title_Gestion_Personnel->TabIndex = 0;
-			this->Title_Gestion_Personnel->Text = L"Gestion Personnel";
-			this->Title_Gestion_Personnel->Click += gcnew System::EventHandler(this, &Dashboard::label2_Click);
-			// 
-			// Dashboard_Text
-			// 
-			this->Dashboard_Text->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 25.875F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Dashboard_Text->ForeColor = System::Drawing::Color::Gainsboro;
-			this->Dashboard_Text->Location = System::Drawing::Point(461, 37);
-			this->Dashboard_Text->Name = L"Dashboard_Text";
-			this->Dashboard_Text->Size = System::Drawing::Size(662, 125);
-			this->Dashboard_Text->TabIndex = 0;
-			this->Dashboard_Text->Text = L"Dashboard";
-			this->Dashboard_Text->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->Dashboard_Text->Click += gcnew System::EventHandler(this, &Dashboard::Dashboard_Text_Click);
 			// 
 			// Dashboard
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)), static_cast<System::Int32>(static_cast<System::Byte>(51)),
 				static_cast<System::Int32>(static_cast<System::Byte>(73)));
-			this->ClientSize = System::Drawing::Size(2212, 1248);
-			this->Controls->Add(this->Pannel_Dashboard);
+			this->ClientSize = System::Drawing::Size(1659, 998);
 			this->Controls->Add(this->panel_gestion);
-			this->Margin = System::Windows::Forms::Padding(5, 6, 5, 6);
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Name = L"Dashboard";
 			this->Text = L"Dashboard";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
-			this->Pannel_Titre->ResumeLayout(false);
 			this->panel_gestion->ResumeLayout(false);
-			this->Pannel_Dashboard->ResumeLayout(false);
-			this->panel_Gestion_Personnel->ResumeLayout(false);
-			this->Panel_Gestion_Client->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
 			private: System::Void Click_Btn_gestion_Personnel(System::Object^ sender, System::EventArgs^ e) {
-				Title_Gestion_Personnel->Show();
-				Panel_Gestion_Client->Hide();
-				Pannel_Dashboard->Hide();
+				
 
 			}
 			private: System::Void Click_Btn_gestion_Clients(System::Object^ sender, System::EventArgs^ e) {
-				Title_Gestion_Personnel->Hide();
-				Panel_Gestion_Client->Show();
-				Pannel_Dashboard->Hide();
+			
 			}
 			private: System::Void Click_Btn_gestion_Commandes(System::Object^ sender, System::EventArgs^ e) {
 			}
