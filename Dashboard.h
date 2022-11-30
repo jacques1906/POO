@@ -60,9 +60,11 @@ namespace POO {
 			// 
 			// panel1
 			// 
+			this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(24)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
+				static_cast<System::Int32>(static_cast<System::Byte>(54)));
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panel1->Location = System::Drawing::Point(0, 0);
-			this->panel1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->panel1->Margin = System::Windows::Forms::Padding(6);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(488, 1248);
 			this->panel1->TabIndex = 0;
@@ -72,7 +74,7 @@ namespace POO {
 			this->panel->Controls->Add(this->Title_Dashboard);
 			this->panel->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel->Location = System::Drawing::Point(488, 0);
-			this->panel->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->panel->Margin = System::Windows::Forms::Padding(6);
 			this->panel->Name = L"panel";
 			this->panel->Size = System::Drawing::Size(1456, 398);
 			this->panel->TabIndex = 1;
@@ -95,12 +97,14 @@ namespace POO {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)), static_cast<System::Int32>(static_cast<System::Byte>(51)),
+				static_cast<System::Int32>(static_cast<System::Byte>(73)));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
 			this->ClientSize = System::Drawing::Size(1944, 1248);
 			this->Controls->Add(this->panel);
 			this->Controls->Add(this->panel1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
-			this->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Margin = System::Windows::Forms::Padding(6);
 			this->Name = L"Dashboard";
 			this->Text = L"Dashboard";
 			this->Load += gcnew System::EventHandler(this, &Dashboard::Dashboard_Load);
