@@ -48,6 +48,9 @@ namespace POO {
 	private: System::Windows::Forms::Button^ Btn_Gestion_clients;
 
 	private: System::Windows::Forms::Button^ Btn_Gestion_Personnel;
+	private: System::Windows::Forms::Panel^ panelgetionspersonnel;
+
+	private: System::Windows::Forms::Label^ label1;
 
 
 	private:
@@ -71,9 +74,13 @@ namespace POO {
 			this->Btn_Gestion_Personnel = (gcnew System::Windows::Forms::Button());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->panel = (gcnew System::Windows::Forms::Panel());
+			this->panelgetionspersonnel = (gcnew System::Windows::Forms::Panel());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->Title_Dashboard = (gcnew System::Windows::Forms::Label());
 			this->panel1->SuspendLayout();
+			this->panel2->SuspendLayout();
 			this->panel->SuspendLayout();
+			this->panelgetionspersonnel->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// panel1
@@ -181,6 +188,7 @@ namespace POO {
 			// 
 			// panel2
 			// 
+			this->panel2->Controls->Add(this->panelgetionspersonnel);
 			this->panel2->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel2->Location = System::Drawing::Point(0, 0);
 			this->panel2->Margin = System::Windows::Forms::Padding(2);
@@ -191,12 +199,35 @@ namespace POO {
 			// panel
 			// 
 			this->panel->Controls->Add(this->Title_Dashboard);
-			this->panel->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel->Location = System::Drawing::Point(366, 0);
 			this->panel->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->panel->Name = L"panel";
-			this->panel->Size = System::Drawing::Size(1474, 141);
+			this->panel->Size = System::Drawing::Size(1474, 998);
 			this->panel->TabIndex = 1;
+			// 
+			// panelgetionspersonnel
+			// 
+			this->panelgetionspersonnel->Controls->Add(this->label1);
+			this->panelgetionspersonnel->Location = System::Drawing::Point(366, 0);
+			this->panelgetionspersonnel->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->panelgetionspersonnel->Name = L"panelgetionspersonnel";
+			this->panelgetionspersonnel->Size = System::Drawing::Size(1474, 998);
+			this->panelgetionspersonnel->TabIndex = 2;
+			this->panelgetionspersonnel->Visible = false;
+			// 
+			// label1
+			// 
+			this->label1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 27.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label1->Location = System::Drawing::Point(348, 36);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(819, 85);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"Gestion Personnel";
+			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// Title_Dashboard
 			// 
@@ -226,13 +257,18 @@ namespace POO {
 			this->Text = L"Dashboard";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 			this->panel1->ResumeLayout(false);
+			this->panel2->ResumeLayout(false);
 			this->panel->ResumeLayout(false);
+			this->panelgetionspersonnel->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
 			private: System::Void Click_Btn_gestion_Personnel(System::Object^ sender, System::EventArgs^ e) {
-				Title_Dashboard->Text = "gestion personnel";
+				label1->Text = "gestion personnel";
+				panelgetionspersonnel->Show();
+				panel->Hide();
+				
 			}
 						private: System::Void Click_Btn_gestion_Clients(System::Object^ sender, System::EventArgs^ e) {
 							Title_Dashboard->Text = "gestion Clients";
