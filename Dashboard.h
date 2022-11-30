@@ -284,6 +284,7 @@ namespace POO {
 			this->Btn_Exit_DB->TabIndex = 6;
 			this->Btn_Exit_DB->Text = L"Exit";
 			this->Btn_Exit_DB->UseVisualStyleBackColor = true;
+			this->Btn_Exit_DB->Click += gcnew System::EventHandler(this, &Dashboard::Click_Btn_Exit_DB);
 			// 
 			// panel_gestion
 			// 
@@ -367,9 +368,9 @@ namespace POO {
 			// panel_Gestion_Stock
 			// 
 			this->panel_Gestion_Stock->Controls->Add(this->title_Gestion_Stock);
-			this->panel_Gestion_Stock->Location = System::Drawing::Point(262, 12);
+			this->panel_Gestion_Stock->Location = System::Drawing::Point(262, 0);
 			this->panel_Gestion_Stock->Name = L"panel_Gestion_Stock";
-			this->panel_Gestion_Stock->Size = System::Drawing::Size(867, 653);
+			this->panel_Gestion_Stock->Size = System::Drawing::Size(733, 665);
 			this->panel_Gestion_Stock->TabIndex = 0;
 			this->panel_Gestion_Stock->Visible = false;
 			// 
@@ -386,7 +387,9 @@ namespace POO {
 			// 
 			// Panel_Gestion_Stat
 			// 
+			this->Panel_Gestion_Stat->AccessibleRole = System::Windows::Forms::AccessibleRole::Pane;
 			this->Panel_Gestion_Stat->Controls->Add(this->Title_Gestion_Stat);
+			this->Panel_Gestion_Stat->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->Panel_Gestion_Stat->Location = System::Drawing::Point(247, 12);
 			this->Panel_Gestion_Stat->Name = L"Panel_Gestion_Stat";
 			this->Panel_Gestion_Stat->Size = System::Drawing::Size(723, 684);
@@ -440,8 +443,6 @@ namespace POO {
 				this->Panel_Gestion_Commandes->Visible = false;
 				this->panel_Gestion_Stock->Visible = false;
 				this->Panel_Gestion_Stat->Visible = false;
-
-
 			}
 			private: System::Void Click_Btn_gestion_Clients(System::Object^ sender, System::EventArgs^ e) {
 				this->Panel_Dashboard->Visible = false;
@@ -474,6 +475,9 @@ namespace POO {
 				this->Panel_Gestion_Commandes->Visible = false;
 				this->panel_Gestion_Stock->Visible = false;
 				this->Panel_Gestion_Stat->Visible = true;
+			}
+			private: System::Void Click_Btn_Exit_DB(System::Object^ sender, System::EventArgs^ e) {
+			this->Close();
 			}
 private: System::Void Panel_Dashboard_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
