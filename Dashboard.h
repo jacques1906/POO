@@ -80,7 +80,7 @@ namespace POO {
 			this->panel->Location = System::Drawing::Point(488, 0);
 			this->panel->Margin = System::Windows::Forms::Padding(6);
 			this->panel->Name = L"panel";
-			this->panel->Size = System::Drawing::Size(1456, 398);
+			this->panel->Size = System::Drawing::Size(1456, 252);
 			this->panel->TabIndex = 1;
 			// 
 			// Title_Dashboard
@@ -89,7 +89,7 @@ namespace POO {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->Title_Dashboard->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 27.75F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->Title_Dashboard->Location = System::Drawing::Point(464, 133);
+			this->Title_Dashboard->Location = System::Drawing::Point(472, 63);
 			this->Title_Dashboard->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->Title_Dashboard->Name = L"Title_Dashboard";
 			this->Title_Dashboard->Size = System::Drawing::Size(582, 106);
@@ -102,7 +102,7 @@ namespace POO {
 			this->panel2->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel2->Location = System::Drawing::Point(0, 0);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(488, 166);
+			this->panel2->Size = System::Drawing::Size(488, 252);
 			this->panel2->TabIndex = 0;
 			// 
 			// Dashboard
