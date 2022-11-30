@@ -80,10 +80,10 @@ namespace POO {
 			this->panel1->Controls->Add(this->write_password);
 			this->panel1->Controls->Add(this->write_Username);
 			this->panel1->Controls->Add(this->label1);
-			this->panel1->Location = System::Drawing::Point(38, 26);
-			this->panel1->Margin = System::Windows::Forms::Padding(6);
+			this->panel1->Location = System::Drawing::Point(28, 21);
+			this->panel1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(834, 1242);
+			this->panel1->Size = System::Drawing::Size(626, 994);
 			this->panel1->TabIndex = 0;
 			// 
 			// btn_cancel
@@ -107,10 +107,10 @@ namespace POO {
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->btn_cancel->IdleForecolor = System::Drawing::Color::White;
 			this->btn_cancel->IdleLineColor = System::Drawing::Color::White;
-			this->btn_cancel->Location = System::Drawing::Point(408, 549);
-			this->btn_cancel->Margin = System::Windows::Forms::Padding(10);
+			this->btn_cancel->Location = System::Drawing::Point(306, 439);
+			this->btn_cancel->Margin = System::Windows::Forms::Padding(8, 8, 8, 8);
 			this->btn_cancel->Name = L"btn_cancel";
-			this->btn_cancel->Size = System::Drawing::Size(362, 79);
+			this->btn_cancel->Size = System::Drawing::Size(272, 63);
 			this->btn_cancel->TabIndex = 4;
 			this->btn_cancel->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->btn_cancel->Click += gcnew System::EventHandler(this, &login::Click_Btn_Cancel);
@@ -136,10 +136,10 @@ namespace POO {
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->btn_login->IdleForecolor = System::Drawing::Color::White;
 			this->btn_login->IdleLineColor = System::Drawing::Color::White;
-			this->btn_login->Location = System::Drawing::Point(10, 549);
-			this->btn_login->Margin = System::Windows::Forms::Padding(10);
+			this->btn_login->Location = System::Drawing::Point(8, 439);
+			this->btn_login->Margin = System::Windows::Forms::Padding(8, 8, 8, 8);
 			this->btn_login->Name = L"btn_login";
-			this->btn_login->Size = System::Drawing::Size(362, 79);
+			this->btn_login->Size = System::Drawing::Size(272, 63);
 			this->btn_login->TabIndex = 3;
 			this->btn_login->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->btn_login->Click += gcnew System::EventHandler(this, &login::Click_Btn_Login);
@@ -152,10 +152,10 @@ namespace POO {
 			this->write_password->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->write_password->ForeColor = System::Drawing::Color::MintCream;
 			this->write_password->Icon = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"write_password.Icon")));
-			this->write_password->Location = System::Drawing::Point(162, 384);
-			this->write_password->Margin = System::Windows::Forms::Padding(12);
+			this->write_password->Location = System::Drawing::Point(122, 307);
+			this->write_password->Margin = System::Windows::Forms::Padding(9, 10, 9, 10);
 			this->write_password->Name = L"write_password";
-			this->write_password->Size = System::Drawing::Size(500, 81);
+			this->write_password->Size = System::Drawing::Size(375, 65);
 			this->write_password->TabIndex = 2;
 			this->write_password->text = L"password";
 			this->write_password->OnTextChange += gcnew System::EventHandler(this, &login::Write_Password);
@@ -168,10 +168,10 @@ namespace POO {
 			this->write_Username->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->write_Username->ForeColor = System::Drawing::Color::MintCream;
 			this->write_Username->Icon = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"write_Username.Icon")));
-			this->write_Username->Location = System::Drawing::Point(162, 206);
-			this->write_Username->Margin = System::Windows::Forms::Padding(12);
+			this->write_Username->Location = System::Drawing::Point(122, 165);
+			this->write_Username->Margin = System::Windows::Forms::Padding(9, 10, 9, 10);
 			this->write_Username->Name = L"write_Username";
-			this->write_Username->Size = System::Drawing::Size(500, 81);
+			this->write_Username->Size = System::Drawing::Size(375, 65);
 			this->write_Username->TabIndex = 1;
 			this->write_Username->text = L"Username";
 			this->write_Username->OnTextChange += gcnew System::EventHandler(this, &login::Write_Username);
@@ -181,26 +181,27 @@ namespace POO {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI Black", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(288, 71);
-			this->label1->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
+			this->label1->Location = System::Drawing::Point(216, 57);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(279, 99);
+			this->label1->Size = System::Drawing::Size(211, 74);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"LOGIN";
 			this->label1->Click += gcnew System::EventHandler(this, &login::Write_Password);
 			// 
 			// login
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(70)), static_cast<System::Int32>(static_cast<System::Byte>(70)),
 				static_cast<System::Int32>(static_cast<System::Byte>(82)));
-			this->ClientSize = System::Drawing::Size(900, 1300);
+			this->ClientSize = System::Drawing::Size(675, 1040);
 			this->Controls->Add(this->panel1);
 			this->Cursor = System::Windows::Forms::Cursors::IBeam;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
-			this->Margin = System::Windows::Forms::Padding(6);
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Name = L"login";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"login";
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
