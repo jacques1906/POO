@@ -80,8 +80,8 @@ namespace POO {
 			this->panel1->Controls->Add(this->write_password);
 			this->panel1->Controls->Add(this->write_Username);
 			this->panel1->Controls->Add(this->label1);
-			this->panel1->Location = System::Drawing::Point(944, 46);
-			this->panel1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->panel1->Location = System::Drawing::Point(38, 26);
+			this->panel1->Margin = System::Windows::Forms::Padding(6);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(834, 1242);
 			this->panel1->TabIndex = 0;
@@ -107,8 +107,8 @@ namespace POO {
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->btn_cancel->IdleForecolor = System::Drawing::Color::White;
 			this->btn_cancel->IdleLineColor = System::Drawing::Color::White;
-			this->btn_cancel->Location = System::Drawing::Point(412, 835);
-			this->btn_cancel->Margin = System::Windows::Forms::Padding(10, 10, 10, 10);
+			this->btn_cancel->Location = System::Drawing::Point(408, 549);
+			this->btn_cancel->Margin = System::Windows::Forms::Padding(10);
 			this->btn_cancel->Name = L"btn_cancel";
 			this->btn_cancel->Size = System::Drawing::Size(362, 79);
 			this->btn_cancel->TabIndex = 4;
@@ -136,8 +136,8 @@ namespace POO {
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->btn_login->IdleForecolor = System::Drawing::Color::White;
 			this->btn_login->IdleLineColor = System::Drawing::Color::White;
-			this->btn_login->Location = System::Drawing::Point(30, 835);
-			this->btn_login->Margin = System::Windows::Forms::Padding(10, 10, 10, 10);
+			this->btn_login->Location = System::Drawing::Point(10, 549);
+			this->btn_login->Margin = System::Windows::Forms::Padding(10);
 			this->btn_login->Name = L"btn_login";
 			this->btn_login->Size = System::Drawing::Size(362, 79);
 			this->btn_login->TabIndex = 3;
@@ -152,8 +152,8 @@ namespace POO {
 			this->write_password->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->write_password->ForeColor = System::Drawing::Color::MintCream;
 			this->write_password->Icon = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"write_password.Icon")));
-			this->write_password->Location = System::Drawing::Point(162, 594);
-			this->write_password->Margin = System::Windows::Forms::Padding(12, 12, 12, 12);
+			this->write_password->Location = System::Drawing::Point(162, 384);
+			this->write_password->Margin = System::Windows::Forms::Padding(12);
 			this->write_password->Name = L"write_password";
 			this->write_password->Size = System::Drawing::Size(500, 81);
 			this->write_password->TabIndex = 2;
@@ -168,8 +168,8 @@ namespace POO {
 			this->write_Username->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->write_Username->ForeColor = System::Drawing::Color::MintCream;
 			this->write_Username->Icon = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"write_Username.Icon")));
-			this->write_Username->Location = System::Drawing::Point(162, 358);
-			this->write_Username->Margin = System::Windows::Forms::Padding(12, 12, 12, 12);
+			this->write_Username->Location = System::Drawing::Point(162, 206);
+			this->write_Username->Margin = System::Windows::Forms::Padding(12);
 			this->write_Username->Name = L"write_Username";
 			this->write_Username->Size = System::Drawing::Size(500, 81);
 			this->write_Username->TabIndex = 1;
@@ -195,10 +195,11 @@ namespace POO {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(70)), static_cast<System::Int32>(static_cast<System::Byte>(70)),
 				static_cast<System::Int32>(static_cast<System::Byte>(82)));
-			this->ClientSize = System::Drawing::Size(2564, 1344);
+			this->ClientSize = System::Drawing::Size(900, 1300);
 			this->Controls->Add(this->panel1);
 			this->Cursor = System::Windows::Forms::Cursors::IBeam;
-			this->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+			this->Margin = System::Windows::Forms::Padding(6);
 			this->Name = L"login";
 			this->Text = L"login";
 			this->panel1->ResumeLayout(false);
