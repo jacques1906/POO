@@ -38,6 +38,7 @@ namespace POO {
 	protected:
 	private: System::Windows::Forms::Panel^ panel;
 	private: System::Windows::Forms::Label^ Title_Dashboard;
+	private: System::Windows::Forms::Panel^ panel2;
 
 	private:
 		/// <summary>
@@ -55,6 +56,8 @@ namespace POO {
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel = (gcnew System::Windows::Forms::Panel());
 			this->Title_Dashboard = (gcnew System::Windows::Forms::Label());
+			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->panel1->SuspendLayout();
 			this->panel->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -62,6 +65,7 @@ namespace POO {
 			// 
 			this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(24)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				static_cast<System::Int32>(static_cast<System::Byte>(54)));
+			this->panel1->Controls->Add(this->panel2);
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panel1->Location = System::Drawing::Point(0, 0);
 			this->panel1->Margin = System::Windows::Forms::Padding(6);
@@ -93,6 +97,14 @@ namespace POO {
 			this->Title_Dashboard->Text = L"Dashboard";
 			this->Title_Dashboard->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
+			// panel2
+			// 
+			this->panel2->Dock = System::Windows::Forms::DockStyle::Top;
+			this->panel2->Location = System::Drawing::Point(0, 0);
+			this->panel2->Name = L"panel2";
+			this->panel2->Size = System::Drawing::Size(488, 166);
+			this->panel2->TabIndex = 0;
+			// 
 			// Dashboard
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
@@ -108,6 +120,7 @@ namespace POO {
 			this->Name = L"Dashboard";
 			this->Text = L"Dashboard";
 			this->Load += gcnew System::EventHandler(this, &Dashboard::Dashboard_Load);
+			this->panel1->ResumeLayout(false);
 			this->panel->ResumeLayout(false);
 			this->ResumeLayout(false);
 
