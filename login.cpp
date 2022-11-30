@@ -10,6 +10,6 @@ using namespace System::Windows::Forms;
 void main(array<String^>^ args) {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	POO::login frm;
-	Application::Run(% frm);
+	POO::login form;
+	Application::Run(% form);
 }
