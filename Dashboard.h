@@ -35,8 +35,10 @@ namespace POO {
 			}
 		}
 	private: System::Windows::Forms::Panel^ panel1;
+	private: System::Windows::Forms::Panel^ panel_Dash_Board;
+
 	protected:
-	private: System::Windows::Forms::Panel^ panel;
+
 	private: System::Windows::Forms::Label^ Title_Dashboard;
 	private: System::Windows::Forms::Panel^ panel2;
 	private: System::Windows::Forms::Button^ Btn_Gestion_stat;
@@ -70,10 +72,10 @@ namespace POO {
 			this->Btn_Gestion_clients = (gcnew System::Windows::Forms::Button());
 			this->Btn_Gestion_Personnel = (gcnew System::Windows::Forms::Button());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
-			this->panel = (gcnew System::Windows::Forms::Panel());
+			this->panel_Dash_Board = (gcnew System::Windows::Forms::Panel());
 			this->Title_Dashboard = (gcnew System::Windows::Forms::Label());
 			this->panel1->SuspendLayout();
-			this->panel->SuspendLayout();
+			this->panel_Dash_Board->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// panel1
@@ -108,9 +110,8 @@ namespace POO {
 			this->Btn_Gestion_stat->Text = L"Gestion statistiques";
 			this->Btn_Gestion_stat->UseVisualStyleBackColor = true;
 			this->Btn_Gestion_stat->Click += gcnew System::EventHandler(this, &Dashboard::Click_Btn_gestion_Stat);
-
 			// 
-			// Btn_Gestion_stocks
+			// Btn_Gestion_stock
 			// 
 			this->Btn_Gestion_stock->Dock = System::Windows::Forms::DockStyle::Top;
 			this->Btn_Gestion_stock->FlatAppearance->BorderSize = 0;
@@ -125,7 +126,6 @@ namespace POO {
 			this->Btn_Gestion_stock->Text = L"Gestion stock";
 			this->Btn_Gestion_stock->UseVisualStyleBackColor = true;
 			this->Btn_Gestion_stock->Click += gcnew System::EventHandler(this, &Dashboard::Click_Btn_gestion_Stock);
-
 			// 
 			// btn_Gestion_commandes
 			// 
@@ -142,7 +142,6 @@ namespace POO {
 			this->btn_Gestion_commandes->Text = L"Gestion commandes";
 			this->btn_Gestion_commandes->UseVisualStyleBackColor = true;
 			this->btn_Gestion_commandes->Click += gcnew System::EventHandler(this, &Dashboard::Click_Btn_gestion_Commandes);
-
 			// 
 			// Btn_Gestion_clients
 			// 
@@ -159,7 +158,6 @@ namespace POO {
 			this->Btn_Gestion_clients->Text = L"Gestion clients";
 			this->Btn_Gestion_clients->UseVisualStyleBackColor = true;
 			this->Btn_Gestion_clients->Click += gcnew System::EventHandler(this, &Dashboard::Click_Btn_gestion_Clients);
-
 			// 
 			// Btn_Gestion_Personnel
 			// 
@@ -186,15 +184,15 @@ namespace POO {
 			this->panel2->Size = System::Drawing::Size(488, 176);
 			this->panel2->TabIndex = 0;
 			// 
-			// panel
+			// panel_Dash_Board
 			// 
-			this->panel->Controls->Add(this->Title_Dashboard);
-			this->panel->Dock = System::Windows::Forms::DockStyle::Top;
-			this->panel->Location = System::Drawing::Point(488, 0);
-			this->panel->Margin = System::Windows::Forms::Padding(6);
-			this->panel->Name = L"panel";
-			this->panel->Size = System::Drawing::Size(1966, 176);
-			this->panel->TabIndex = 1;
+			this->panel_Dash_Board->Controls->Add(this->Title_Dashboard);
+			this->panel_Dash_Board->Dock = System::Windows::Forms::DockStyle::Top;
+			this->panel_Dash_Board->Location = System::Drawing::Point(488, 0);
+			this->panel_Dash_Board->Margin = System::Windows::Forms::Padding(6);
+			this->panel_Dash_Board->Name = L"panel_Dash_Board";
+			this->panel_Dash_Board->Size = System::Drawing::Size(1966, 1096);
+			this->panel_Dash_Board->TabIndex = 1;
 			// 
 			// Title_Dashboard
 			// 
@@ -217,13 +215,13 @@ namespace POO {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)), static_cast<System::Int32>(static_cast<System::Byte>(51)),
 				static_cast<System::Int32>(static_cast<System::Byte>(73)));
 			this->ClientSize = System::Drawing::Size(2454, 1248);
-			this->Controls->Add(this->panel);
+			this->Controls->Add(this->panel_Dash_Board);
 			this->Controls->Add(this->panel1);
 			this->Margin = System::Windows::Forms::Padding(6);
 			this->Name = L"Dashboard";
 			this->Text = L"Dashboard";
 			this->panel1->ResumeLayout(false);
-			this->panel->ResumeLayout(false);
+			this->panel_Dash_Board->ResumeLayout(false);
 			this->ResumeLayout(false);
 
 		}
