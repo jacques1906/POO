@@ -218,17 +218,24 @@ namespace POO {
 	}
 
 	private: System::Void Click_Btn_Login(System::Object^ sender, System::EventArgs^ e) {
-		if (write_Username->text == "admin" && write_password->text == "password")
+		if (write_Username->text == "admin")
 		{
-			this->Hide();
-			Dashboard^ Db = gcnew Dashboard;
-			Db->ShowDialog();
+			if (write_password->text == "password")
+			{
+				this->Hide();
+				Dashboard^ Db = gcnew Dashboard;
+				Db->ShowDialog();
+			}
+			else
+			{
+				MessageBox::Show("Incorrect Password", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			}
 		}
 		else
 		{
-			MessageBox::Show("User name or password incorrect");
-			MessageBoxButtons::OK;
+			MessageBox::Show("Incorrect Username", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
+		
 	}
 	};
 }
