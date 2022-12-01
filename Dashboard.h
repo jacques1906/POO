@@ -82,30 +82,36 @@ namespace POO {
 	private: System::Windows::Forms::TextBox^ text1_message;
 	private: System::Windows::Forms::DateTimePicker^ select_date_embauche;
 	private: System::Windows::Forms::Label^ label_date_embauche;
-	private: System::Windows::Forms::Label^ label_pernom;
+	private: System::Windows::Forms::Label^ label_prenompersonnel;
+
 	private: System::Windows::Forms::TextBox^ text_pernom;
-	private: System::Windows::Forms::Label^ label_nom;
+	private: System::Windows::Forms::Label^ label_nompersonnel;
+
 	private: System::Windows::Forms::TextBox^ text_nom;
 	private: System::Windows::Forms::Label^ Label_Id_perso;
 	private: System::Windows::Forms::TextBox^ text_personnel;
 	private: System::Windows::Forms::ComboBox^ choice_superieur;
-	private: System::Windows::Forms::Label^ label_code_postal;
+	private: System::Windows::Forms::Label^ label_code_postalpersonnel;
+
 	private: System::Windows::Forms::TextBox^ textBox_code_postal;
+	private: System::Windows::Forms::Label^ label_villepersonnel;
 
 
 
-	private: System::Windows::Forms::Label^ label_ville;
+
 
 	private: System::Windows::Forms::Label^ labelpayslivraison;
+	private: System::Windows::Forms::Label^ label_adressepersonnel;
 
 
-	private: System::Windows::Forms::Label^ label_adresse;
+
 	private: System::Windows::Forms::TextBox^ text_adresse;
 
 
 
 	private: System::Windows::Forms::Label^ label_Superieur;
-	private: System::Windows::Forms::Label^ label_departement;
+	private: System::Windows::Forms::Label^ label_payspersonnel;
+
 
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 	private: Bunifu::Framework::UI::BunifuThinButton2^ button_enregistrer;
@@ -126,8 +132,10 @@ namespace POO {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ adresse;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ ville;
 private: System::Windows::Forms::DataGridViewComboBoxColumn^ pays;
+private: System::Windows::Forms::DataGridViewComboBoxColumn^ code_postal;
 
-	private: System::Windows::Forms::DataGridViewComboBoxColumn^ code_postal;
+
+
 
 	private: System::Windows::Forms::Label^ labelvillelivraison;
 
@@ -142,8 +150,9 @@ private: System::Windows::Forms::DataGridViewComboBoxColumn^ pays;
 
 
 	private: System::Windows::Forms::TextBox^ text_villelivraison;
+private: System::Windows::Forms::TextBox^ text_codepostalelivraison;
 
-	private: System::Windows::Forms::TextBox^ textBox9Atext_codepostalelivraison;
+
 
 	private: System::Windows::Forms::TextBox^ text_idadresselivraison;
 
@@ -198,10 +207,11 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ button1_supprimer;
 private: Bunifu::Framework::UI::BunifuThinButton2^ button1_modiffier;
 private: Bunifu::Framework::UI::BunifuThinButton2^ button1_ajouter;
 private: Bunifu::Framework::UI::BunifuThinButton2^ button1_afficher;
-private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton21;
-private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton22;
-private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton23;
-private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton24;
+private: Bunifu::Framework::UI::BunifuThinButton2^ button2_supprimer;
+private: Bunifu::Framework::UI::BunifuThinButton2^ button2_modifier;
+private: Bunifu::Framework::UI::BunifuThinButton2^ button2_ajouter;
+private: Bunifu::Framework::UI::BunifuThinButton2^ button2_afficher;
+private: System::Windows::Forms::TextBox^ text_messagecommande;
 
 
 
@@ -214,7 +224,12 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton24;
 
 
 
-private: System::Windows::Forms::TextBox^ textBox7;
+
+
+
+
+
+
 private: System::Windows::Forms::Label^ label_datelivraison;
 
 
@@ -240,8 +255,10 @@ private: System::Windows::Forms::TextBox^ text_datelivraison;
 private: System::Windows::Forms::TextBox^ text_montanttotHT;
 
 private: System::Windows::Forms::TextBox^ text_refcommande;
+private: System::Windows::Forms::DataGridView^ dataGridView_gestcommande;
 
-private: System::Windows::Forms::DataGridView^ dataGridView2;
+
+
 private: System::Windows::Forms::Label^ label_montanttotTTC;
 private: System::Windows::Forms::TextBox^ text_montanttotTTC;
 
@@ -270,25 +287,49 @@ private: System::Windows::Forms::TextBox^ text_mypaiement;
 private: System::Windows::Forms::TextBox^ text_nbpaiement;
 
 private: System::Windows::Forms::Label^ label10;
-private: System::Windows::Forms::Label^ label11;
-private: System::Windows::Forms::Label^ label12;
-private: System::Windows::Forms::Label^ label13;
-private: System::Windows::Forms::Label^ label14;
-private: System::Windows::Forms::Label^ label15;
-private: System::Windows::Forms::TextBox^ textBox8;
-private: System::Windows::Forms::TextBox^ textBox9;
-private: System::Windows::Forms::TextBox^ textBox10;
-private: System::Windows::Forms::TextBox^ textBox11;
-private: System::Windows::Forms::TextBox^ textBox12;
-private: System::Windows::Forms::Label^ label5;
-private: System::Windows::Forms::Label^ label6;
-private: System::Windows::Forms::TextBox^ textBox3;
-private: System::Windows::Forms::TextBox^ textBox5;
-private: System::Windows::Forms::Label^ label2;
-private: System::Windows::Forms::Label^ label4;
-private: System::Windows::Forms::TextBox^ textBox1;
-private: System::Windows::Forms::TextBox^ textBox2;
-private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
+private: System::Windows::Forms::Label^ label_soldereglement;
+private: System::Windows::Forms::Label^ label_idadressesociete;
+
+
+private: System::Windows::Forms::Label^ label_societe;
+
+private: System::Windows::Forms::Label^ label_nmservice;
+
+private: System::Windows::Forms::Label^ label_idfacture;
+private: System::Windows::Forms::TextBox^ text_nmservice;
+
+
+private: System::Windows::Forms::TextBox^ text_soldereglement;
+private: System::Windows::Forms::TextBox^ text_idadressesociete;
+
+
+private: System::Windows::Forms::TextBox^ text_societe;
+
+private: System::Windows::Forms::TextBox^ text_idfacture;
+private: System::Windows::Forms::Label^ label_payssociete;
+
+
+private: System::Windows::Forms::Label^ label_codepostsociete;
+private: System::Windows::Forms::TextBox^ text_payssociete;
+
+
+private: System::Windows::Forms::TextBox^ text_codepostsociete;
+
+private: System::Windows::Forms::Label^ label_villesociete;
+
+private: System::Windows::Forms::Label^ label_adressepostsociete;
+private: System::Windows::Forms::TextBox^ text_villesociete;
+
+
+private: System::Windows::Forms::TextBox^ text_adressepostsociete;
+
+private: Bunifu::Framework::UI::BunifuThinButton2^ button2_nouveau;
+private: System::Windows::Forms::Label^ label8;
+private: System::Windows::Forms::TextBox^ textBox13;
+private: System::Windows::Forms::Label^ label7;
+private: System::Windows::Forms::TextBox^ textBox6;
+private: Bunifu::Framework::UI::BunifuThinButton2^ button1_nouveau;
+
 
 
 
@@ -355,19 +396,19 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->ville = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->pays = (gcnew System::Windows::Forms::DataGridViewComboBoxColumn());
 			this->code_postal = (gcnew System::Windows::Forms::DataGridViewComboBoxColumn());
-			this->label_departement = (gcnew System::Windows::Forms::Label());
+			this->label_payspersonnel = (gcnew System::Windows::Forms::Label());
 			this->choice_superieur = (gcnew System::Windows::Forms::ComboBox());
-			this->label_code_postal = (gcnew System::Windows::Forms::Label());
+			this->label_code_postalpersonnel = (gcnew System::Windows::Forms::Label());
 			this->textBox_code_postal = (gcnew System::Windows::Forms::TextBox());
-			this->label_ville = (gcnew System::Windows::Forms::Label());
-			this->label_adresse = (gcnew System::Windows::Forms::Label());
+			this->label_villepersonnel = (gcnew System::Windows::Forms::Label());
+			this->label_adressepersonnel = (gcnew System::Windows::Forms::Label());
 			this->text_adresse = (gcnew System::Windows::Forms::TextBox());
 			this->label_Superieur = (gcnew System::Windows::Forms::Label());
 			this->select_date_embauche = (gcnew System::Windows::Forms::DateTimePicker());
 			this->label_date_embauche = (gcnew System::Windows::Forms::Label());
-			this->label_pernom = (gcnew System::Windows::Forms::Label());
+			this->label_prenompersonnel = (gcnew System::Windows::Forms::Label());
 			this->text_pernom = (gcnew System::Windows::Forms::TextBox());
-			this->label_nom = (gcnew System::Windows::Forms::Label());
+			this->label_nompersonnel = (gcnew System::Windows::Forms::Label());
 			this->text_nom = (gcnew System::Windows::Forms::TextBox());
 			this->Label_Id_perso = (gcnew System::Windows::Forms::Label());
 			this->text_personnel = (gcnew System::Windows::Forms::TextBox());
@@ -408,7 +449,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->text_adressepostalelivraison = (gcnew System::Windows::Forms::TextBox());
 			this->text_payslivraison = (gcnew System::Windows::Forms::TextBox());
 			this->text_villelivraison = (gcnew System::Windows::Forms::TextBox());
-			this->textBox9Atext_codepostalelivraison = (gcnew System::Windows::Forms::TextBox());
+			this->text_codepostalelivraison = (gcnew System::Windows::Forms::TextBox());
 			this->text_idadresselivraison = (gcnew System::Windows::Forms::TextBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->labeldatenaissance = (gcnew System::Windows::Forms::Label());
@@ -437,22 +478,22 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label_montanttotTVA = (gcnew System::Windows::Forms::Label());
 			this->text_montanttotTVA = (gcnew System::Windows::Forms::TextBox());
 			this->label2_informationsgen = (gcnew System::Windows::Forms::Label());
-			this->bunifuThinButton21 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
-			this->bunifuThinButton22 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
-			this->bunifuThinButton23 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
-			this->bunifuThinButton24 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->button2_supprimer = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->button2_modifier = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->button2_ajouter = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->button2_afficher = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
 			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
-			this->label11 = (gcnew System::Windows::Forms::Label());
-			this->label12 = (gcnew System::Windows::Forms::Label());
-			this->label13 = (gcnew System::Windows::Forms::Label());
-			this->label14 = (gcnew System::Windows::Forms::Label());
-			this->label15 = (gcnew System::Windows::Forms::Label());
-			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox10 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox11 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox12 = (gcnew System::Windows::Forms::TextBox());
+			this->text_messagecommande = (gcnew System::Windows::Forms::TextBox());
+			this->label_soldereglement = (gcnew System::Windows::Forms::Label());
+			this->label_idadressesociete = (gcnew System::Windows::Forms::Label());
+			this->label_societe = (gcnew System::Windows::Forms::Label());
+			this->label_nmservice = (gcnew System::Windows::Forms::Label());
+			this->label_idfacture = (gcnew System::Windows::Forms::Label());
+			this->text_nmservice = (gcnew System::Windows::Forms::TextBox());
+			this->text_soldereglement = (gcnew System::Windows::Forms::TextBox());
+			this->text_idadressesociete = (gcnew System::Windows::Forms::TextBox());
+			this->text_societe = (gcnew System::Windows::Forms::TextBox());
+			this->text_idfacture = (gcnew System::Windows::Forms::TextBox());
 			this->label_datelivraison = (gcnew System::Windows::Forms::Label());
 			this->label_monanttotHT = (gcnew System::Windows::Forms::Label());
 			this->label2_idclientcommande = (gcnew System::Windows::Forms::Label());
@@ -461,21 +502,26 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->text_datelivraison = (gcnew System::Windows::Forms::TextBox());
 			this->text_montanttotHT = (gcnew System::Windows::Forms::TextBox());
 			this->text_refcommande = (gcnew System::Windows::Forms::TextBox());
-			this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
+			this->dataGridView_gestcommande = (gcnew System::Windows::Forms::DataGridView());
 			this->Title_Gestion_Commandes = (gcnew System::Windows::Forms::Label());
 			this->panel_Gestion_Stock = (gcnew System::Windows::Forms::Panel());
 			this->title_Gestion_Stock = (gcnew System::Windows::Forms::Label());
 			this->Panel_Gestion_Stat = (gcnew System::Windows::Forms::Panel());
 			this->Title_Gestion_Stat = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
-			this->bunifuThinButton25 = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->label_villesociete = (gcnew System::Windows::Forms::Label());
+			this->label_adressepostsociete = (gcnew System::Windows::Forms::Label());
+			this->text_villesociete = (gcnew System::Windows::Forms::TextBox());
+			this->text_adressepostsociete = (gcnew System::Windows::Forms::TextBox());
+			this->label_payssociete = (gcnew System::Windows::Forms::Label());
+			this->label_codepostsociete = (gcnew System::Windows::Forms::Label());
+			this->text_payssociete = (gcnew System::Windows::Forms::TextBox());
+			this->text_codepostsociete = (gcnew System::Windows::Forms::TextBox());
+			this->button2_nouveau = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->textBox13 = (gcnew System::Windows::Forms::TextBox());
+			this->button1_nouveau = (gcnew Bunifu::Framework::UI::BunifuThinButton2());
 			this->panel_Gestion_Personnel->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->panel_gestion->SuspendLayout();
@@ -483,7 +529,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->Panel_Gestion_Client->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView_gestclient))->BeginInit();
 			this->Panel_Gestion_Commandes->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView_gestcommande))->BeginInit();
 			this->panel_Gestion_Stock->SuspendLayout();
 			this->Panel_Gestion_Stat->SuspendLayout();
 			this->SuspendLayout();
@@ -504,11 +550,13 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// Pannel_Titre
 			// 
+			this->Pannel_Titre->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"Pannel_Titre.BackgroundImage")));
+			this->Pannel_Titre->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
 			this->Pannel_Titre->Dock = System::Windows::Forms::DockStyle::Top;
 			this->Pannel_Titre->Location = System::Drawing::Point(0, 0);
 			this->Pannel_Titre->Margin = System::Windows::Forms::Padding(2);
 			this->Pannel_Titre->Name = L"Pannel_Titre";
-			this->Pannel_Titre->Size = System::Drawing::Size(366, 178);
+			this->Pannel_Titre->Size = System::Drawing::Size(366, 400);
 			this->Pannel_Titre->TabIndex = 0;
 			// 
 			// panel_Gestion_Personnel
@@ -520,19 +568,19 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->panel_Gestion_Personnel->Controls->Add(this->button_nouveau);
 			this->panel_Gestion_Personnel->Controls->Add(this->button_enregistrer);
 			this->panel_Gestion_Personnel->Controls->Add(this->dataGridView1);
-			this->panel_Gestion_Personnel->Controls->Add(this->label_departement);
+			this->panel_Gestion_Personnel->Controls->Add(this->label_payspersonnel);
 			this->panel_Gestion_Personnel->Controls->Add(this->choice_superieur);
-			this->panel_Gestion_Personnel->Controls->Add(this->label_code_postal);
+			this->panel_Gestion_Personnel->Controls->Add(this->label_code_postalpersonnel);
 			this->panel_Gestion_Personnel->Controls->Add(this->textBox_code_postal);
-			this->panel_Gestion_Personnel->Controls->Add(this->label_ville);
-			this->panel_Gestion_Personnel->Controls->Add(this->label_adresse);
+			this->panel_Gestion_Personnel->Controls->Add(this->label_villepersonnel);
+			this->panel_Gestion_Personnel->Controls->Add(this->label_adressepersonnel);
 			this->panel_Gestion_Personnel->Controls->Add(this->text_adresse);
 			this->panel_Gestion_Personnel->Controls->Add(this->label_Superieur);
 			this->panel_Gestion_Personnel->Controls->Add(this->select_date_embauche);
 			this->panel_Gestion_Personnel->Controls->Add(this->label_date_embauche);
-			this->panel_Gestion_Personnel->Controls->Add(this->label_pernom);
+			this->panel_Gestion_Personnel->Controls->Add(this->label_prenompersonnel);
 			this->panel_Gestion_Personnel->Controls->Add(this->text_pernom);
-			this->panel_Gestion_Personnel->Controls->Add(this->label_nom);
+			this->panel_Gestion_Personnel->Controls->Add(this->label_nompersonnel);
 			this->panel_Gestion_Personnel->Controls->Add(this->text_nom);
 			this->panel_Gestion_Personnel->Controls->Add(this->Label_Id_perso);
 			this->panel_Gestion_Personnel->Controls->Add(this->text_personnel);
@@ -764,18 +812,18 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->code_postal->Name = L"code_postal";
 			this->code_postal->Width = 200;
 			// 
-			// label_departement
+			// label_payspersonnel
 			// 
-			this->label_departement->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label_payspersonnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label_departement->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_departement->Location = System::Drawing::Point(657, 290);
-			this->label_departement->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label_departement->Name = L"label_departement";
-			this->label_departement->Size = System::Drawing::Size(150, 42);
-			this->label_departement->TabIndex = 20;
-			this->label_departement->Text = L"département";
-			this->label_departement->Click += gcnew System::EventHandler(this, &Dashboard::label_departement_Click);
+			this->label_payspersonnel->ForeColor = System::Drawing::Color::WhiteSmoke;
+			this->label_payspersonnel->Location = System::Drawing::Point(657, 290);
+			this->label_payspersonnel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_payspersonnel->Name = L"label_payspersonnel";
+			this->label_payspersonnel->Size = System::Drawing::Size(150, 42);
+			this->label_payspersonnel->TabIndex = 20;
+			this->label_payspersonnel->Text = L"département";
+			this->label_payspersonnel->Click += gcnew System::EventHandler(this, &Dashboard::label_departement_Click);
 			// 
 			// choice_superieur
 			// 
@@ -790,17 +838,17 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->choice_superieur->TabIndex = 18;
 			this->choice_superieur->SelectedIndexChanged += gcnew System::EventHandler(this, &Dashboard::choice_superieur_SelectedIndexChanged);
 			// 
-			// label_code_postal
+			// label_code_postalpersonnel
 			// 
-			this->label_code_postal->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label_code_postalpersonnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label_code_postal->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_code_postal->Location = System::Drawing::Point(450, 402);
-			this->label_code_postal->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label_code_postal->Name = L"label_code_postal";
-			this->label_code_postal->Size = System::Drawing::Size(150, 42);
-			this->label_code_postal->TabIndex = 17;
-			this->label_code_postal->Text = L"code postal";
+			this->label_code_postalpersonnel->ForeColor = System::Drawing::Color::WhiteSmoke;
+			this->label_code_postalpersonnel->Location = System::Drawing::Point(450, 402);
+			this->label_code_postalpersonnel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_code_postalpersonnel->Name = L"label_code_postalpersonnel";
+			this->label_code_postalpersonnel->Size = System::Drawing::Size(150, 42);
+			this->label_code_postalpersonnel->TabIndex = 17;
+			this->label_code_postalpersonnel->Text = L"code postal";
 			// 
 			// textBox_code_postal
 			// 
@@ -811,30 +859,30 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->textBox_code_postal->TabIndex = 16;
 			this->textBox_code_postal->TextChanged += gcnew System::EventHandler(this, &Dashboard::textBox_code_postal_TextChanged);
 			// 
-			// label_ville
+			// label_villepersonnel
 			// 
-			this->label_ville->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label_villepersonnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label_ville->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_ville->Location = System::Drawing::Point(440, 290);
-			this->label_ville->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label_ville->Name = L"label_ville";
-			this->label_ville->Size = System::Drawing::Size(150, 42);
-			this->label_ville->TabIndex = 15;
-			this->label_ville->Text = L"ville";
+			this->label_villepersonnel->ForeColor = System::Drawing::Color::WhiteSmoke;
+			this->label_villepersonnel->Location = System::Drawing::Point(440, 290);
+			this->label_villepersonnel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_villepersonnel->Name = L"label_villepersonnel";
+			this->label_villepersonnel->Size = System::Drawing::Size(150, 42);
+			this->label_villepersonnel->TabIndex = 15;
+			this->label_villepersonnel->Text = L"ville";
 			// 
-			// label_adresse
+			// label_adressepersonnel
 			// 
-			this->label_adresse->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label_adressepersonnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label_adresse->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_adresse->Location = System::Drawing::Point(440, 202);
-			this->label_adresse->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label_adresse->Name = L"label_adresse";
-			this->label_adresse->Size = System::Drawing::Size(150, 42);
-			this->label_adresse->TabIndex = 13;
-			this->label_adresse->Text = L"adresse";
-			this->label_adresse->Click += gcnew System::EventHandler(this, &Dashboard::label3_Click);
+			this->label_adressepersonnel->ForeColor = System::Drawing::Color::WhiteSmoke;
+			this->label_adressepersonnel->Location = System::Drawing::Point(440, 202);
+			this->label_adressepersonnel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_adressepersonnel->Name = L"label_adressepersonnel";
+			this->label_adressepersonnel->Size = System::Drawing::Size(150, 42);
+			this->label_adressepersonnel->TabIndex = 13;
+			this->label_adressepersonnel->Text = L"adresse";
+			this->label_adressepersonnel->Click += gcnew System::EventHandler(this, &Dashboard::label3_Click);
 			// 
 			// text_adresse
 			// 
@@ -880,18 +928,18 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label_date_embauche->Text = L"date d\'embauche";
 			this->label_date_embauche->Click += gcnew System::EventHandler(this, &Dashboard::label_date_embauche_Click);
 			// 
-			// label_pernom
+			// label_prenompersonnel
 			// 
-			this->label_pernom->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label_prenompersonnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label_pernom->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_pernom->Location = System::Drawing::Point(44, 300);
-			this->label_pernom->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label_pernom->Name = L"label_pernom";
-			this->label_pernom->Size = System::Drawing::Size(150, 42);
-			this->label_pernom->TabIndex = 6;
-			this->label_pernom->Text = L"prenom";
-			this->label_pernom->Click += gcnew System::EventHandler(this, &Dashboard::label_pernom_Click);
+			this->label_prenompersonnel->ForeColor = System::Drawing::Color::WhiteSmoke;
+			this->label_prenompersonnel->Location = System::Drawing::Point(44, 300);
+			this->label_prenompersonnel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_prenompersonnel->Name = L"label_prenompersonnel";
+			this->label_prenompersonnel->Size = System::Drawing::Size(150, 42);
+			this->label_prenompersonnel->TabIndex = 6;
+			this->label_prenompersonnel->Text = L"prenom";
+			this->label_prenompersonnel->Click += gcnew System::EventHandler(this, &Dashboard::label_pernom_Click);
 			// 
 			// text_pernom
 			// 
@@ -902,18 +950,18 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->text_pernom->TabIndex = 5;
 			this->text_pernom->TextChanged += gcnew System::EventHandler(this, &Dashboard::text_pernom_TextChanged);
 			// 
-			// label_nom
+			// label_nompersonnel
 			// 
-			this->label_nom->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label_nompersonnel->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label_nom->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->label_nom->Location = System::Drawing::Point(44, 202);
-			this->label_nom->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label_nom->Name = L"label_nom";
-			this->label_nom->Size = System::Drawing::Size(150, 42);
-			this->label_nom->TabIndex = 4;
-			this->label_nom->Text = L"nom";
-			this->label_nom->Click += gcnew System::EventHandler(this, &Dashboard::label_nom_Click);
+			this->label_nompersonnel->ForeColor = System::Drawing::Color::WhiteSmoke;
+			this->label_nompersonnel->Location = System::Drawing::Point(44, 202);
+			this->label_nompersonnel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label_nompersonnel->Name = L"label_nompersonnel";
+			this->label_nompersonnel->Size = System::Drawing::Size(150, 42);
+			this->label_nompersonnel->TabIndex = 4;
+			this->label_nompersonnel->Text = L"nom";
+			this->label_nompersonnel->Click += gcnew System::EventHandler(this, &Dashboard::label_nom_Click);
 			// 
 			// text_nom
 			// 
@@ -967,7 +1015,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 				static_cast<System::Byte>(0)));
 			this->Btn_Gestion_Personnel->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Gestion_Personnel->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Gestion_Personnel->Location = System::Drawing::Point(0, 178);
+			this->Btn_Gestion_Personnel->Location = System::Drawing::Point(0, 400);
 			this->Btn_Gestion_Personnel->Margin = System::Windows::Forms::Padding(2);
 			this->Btn_Gestion_Personnel->Name = L"Btn_Gestion_Personnel";
 			this->Btn_Gestion_Personnel->Size = System::Drawing::Size(366, 105);
@@ -984,7 +1032,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->Btn_Gestion_clients->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->Btn_Gestion_clients->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Gestion_clients->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Gestion_clients->Location = System::Drawing::Point(0, 283);
+			this->Btn_Gestion_clients->Location = System::Drawing::Point(0, 505);
 			this->Btn_Gestion_clients->Margin = System::Windows::Forms::Padding(2);
 			this->Btn_Gestion_clients->Name = L"Btn_Gestion_clients";
 			this->Btn_Gestion_clients->Size = System::Drawing::Size(366, 105);
@@ -1001,7 +1049,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->btn_Gestion_commandes->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->btn_Gestion_commandes->ForeColor = System::Drawing::Color::Gainsboro;
 			this->btn_Gestion_commandes->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->btn_Gestion_commandes->Location = System::Drawing::Point(0, 388);
+			this->btn_Gestion_commandes->Location = System::Drawing::Point(0, 610);
 			this->btn_Gestion_commandes->Margin = System::Windows::Forms::Padding(2);
 			this->btn_Gestion_commandes->Name = L"btn_Gestion_commandes";
 			this->btn_Gestion_commandes->Size = System::Drawing::Size(366, 105);
@@ -1018,7 +1066,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->Btn_Gestion_stock->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->Btn_Gestion_stock->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Gestion_stock->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Gestion_stock->Location = System::Drawing::Point(0, 493);
+			this->Btn_Gestion_stock->Location = System::Drawing::Point(0, 715);
 			this->Btn_Gestion_stock->Margin = System::Windows::Forms::Padding(2);
 			this->Btn_Gestion_stock->Name = L"Btn_Gestion_stock";
 			this->Btn_Gestion_stock->Size = System::Drawing::Size(366, 105);
@@ -1035,7 +1083,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->Btn_Gestion_stat->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->Btn_Gestion_stat->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Gestion_stat->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Gestion_stat->Location = System::Drawing::Point(0, 598);
+			this->Btn_Gestion_stat->Location = System::Drawing::Point(0, 820);
 			this->Btn_Gestion_stat->Margin = System::Windows::Forms::Padding(2);
 			this->Btn_Gestion_stat->Name = L"Btn_Gestion_stat";
 			this->Btn_Gestion_stat->Size = System::Drawing::Size(366, 105);
@@ -1052,7 +1100,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->Btn_Exit_DB->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 13.875F, System::Drawing::FontStyle::Bold));
 			this->Btn_Exit_DB->ForeColor = System::Drawing::Color::Gainsboro;
 			this->Btn_Exit_DB->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->Btn_Exit_DB->Location = System::Drawing::Point(0, 703);
+			this->Btn_Exit_DB->Location = System::Drawing::Point(0, 925);
 			this->Btn_Exit_DB->Margin = System::Windows::Forms::Padding(2);
 			this->Btn_Exit_DB->Name = L"Btn_Exit_DB";
 			this->Btn_Exit_DB->Size = System::Drawing::Size(366, 105);
@@ -1105,6 +1153,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// Panel_Gestion_Client
 			// 
+			this->Panel_Gestion_Client->Controls->Add(this->button1_nouveau);
 			this->Panel_Gestion_Client->Controls->Add(this->button1_supprimer);
 			this->Panel_Gestion_Client->Controls->Add(this->button1_modiffier);
 			this->Panel_Gestion_Client->Controls->Add(this->button1_ajouter);
@@ -1131,7 +1180,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->Panel_Gestion_Client->Controls->Add(this->text_adressepostalelivraison);
 			this->Panel_Gestion_Client->Controls->Add(this->text_payslivraison);
 			this->Panel_Gestion_Client->Controls->Add(this->text_villelivraison);
-			this->Panel_Gestion_Client->Controls->Add(this->textBox9Atext_codepostalelivraison);
+			this->Panel_Gestion_Client->Controls->Add(this->text_codepostalelivraison);
 			this->Panel_Gestion_Client->Controls->Add(this->text_idadresselivraison);
 			this->Panel_Gestion_Client->Controls->Add(this->label3);
 			this->Panel_Gestion_Client->Controls->Add(this->labeldatenaissance);
@@ -1172,7 +1221,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->button1_supprimer->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button1_supprimer->IdleForecolor = System::Drawing::Color::White;
 			this->button1_supprimer->IdleLineColor = System::Drawing::Color::White;
-			this->button1_supprimer->Location = System::Drawing::Point(1177, 737);
+			this->button1_supprimer->Location = System::Drawing::Point(1096, 782);
 			this->button1_supprimer->Margin = System::Windows::Forms::Padding(5);
 			this->button1_supprimer->Name = L"button1_supprimer";
 			this->button1_supprimer->Size = System::Drawing::Size(273, 72);
@@ -1199,7 +1248,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->button1_modiffier->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button1_modiffier->IdleForecolor = System::Drawing::Color::White;
 			this->button1_modiffier->IdleLineColor = System::Drawing::Color::White;
-			this->button1_modiffier->Location = System::Drawing::Point(835, 737);
+			this->button1_modiffier->Location = System::Drawing::Point(754, 782);
 			this->button1_modiffier->Margin = System::Windows::Forms::Padding(5);
 			this->button1_modiffier->Name = L"button1_modiffier";
 			this->button1_modiffier->Size = System::Drawing::Size(275, 72);
@@ -1226,7 +1275,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->button1_ajouter->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button1_ajouter->IdleForecolor = System::Drawing::Color::White;
 			this->button1_ajouter->IdleLineColor = System::Drawing::Color::White;
-			this->button1_ajouter->Location = System::Drawing::Point(496, 737);
+			this->button1_ajouter->Location = System::Drawing::Point(415, 782);
 			this->button1_ajouter->Margin = System::Windows::Forms::Padding(5);
 			this->button1_ajouter->Name = L"button1_ajouter";
 			this->button1_ajouter->Size = System::Drawing::Size(274, 72);
@@ -1253,7 +1302,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->button1_afficher->IdleFillColor = System::Drawing::Color::Transparent;
 			this->button1_afficher->IdleForecolor = System::Drawing::Color::White;
 			this->button1_afficher->IdleLineColor = System::Drawing::Color::White;
-			this->button1_afficher->Location = System::Drawing::Point(155, 737);
+			this->button1_afficher->Location = System::Drawing::Point(74, 782);
 			this->button1_afficher->Margin = System::Windows::Forms::Padding(5);
 			this->button1_afficher->Name = L"button1_afficher";
 			this->button1_afficher->Size = System::Drawing::Size(271, 72);
@@ -1267,7 +1316,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->labelpaysfacturation->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelpaysfacturation->ForeColor = System::Drawing::Color::White;
-			this->labelpaysfacturation->Location = System::Drawing::Point(1218, 646);
+			this->labelpaysfacturation->Location = System::Drawing::Point(1347, 646);
 			this->labelpaysfacturation->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labelpaysfacturation->Name = L"labelpaysfacturation";
 			this->labelpaysfacturation->Size = System::Drawing::Size(50, 28);
@@ -1281,7 +1330,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->labelvillefacturation->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelvillefacturation->ForeColor = System::Drawing::Color::White;
-			this->labelvillefacturation->Location = System::Drawing::Point(1219, 572);
+			this->labelvillefacturation->Location = System::Drawing::Point(1348, 572);
 			this->labelvillefacturation->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labelvillefacturation->Name = L"labelvillefacturation";
 			this->labelvillefacturation->Size = System::Drawing::Size(49, 28);
@@ -1295,7 +1344,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->labelcodepostalefacturation->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelcodepostalefacturation->ForeColor = System::Drawing::Color::White;
-			this->labelcodepostalefacturation->Location = System::Drawing::Point(1218, 486);
+			this->labelcodepostalefacturation->Location = System::Drawing::Point(1347, 486);
 			this->labelcodepostalefacturation->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labelcodepostalefacturation->Name = L"labelcodepostalefacturation";
 			this->labelcodepostalefacturation->Size = System::Drawing::Size(125, 28);
@@ -1309,7 +1358,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->labeladressepostalefacturation->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labeladressepostalefacturation->ForeColor = System::Drawing::Color::White;
-			this->labeladressepostalefacturation->Location = System::Drawing::Point(1219, 404);
+			this->labeladressepostalefacturation->Location = System::Drawing::Point(1348, 404);
 			this->labeladressepostalefacturation->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labeladressepostalefacturation->Name = L"labeladressepostalefacturation";
 			this->labeladressepostalefacturation->Size = System::Drawing::Size(147, 28);
@@ -1323,7 +1372,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->labelidadressefacturation->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelidadressefacturation->ForeColor = System::Drawing::Color::White;
-			this->labelidadressefacturation->Location = System::Drawing::Point(1219, 318);
+			this->labelidadressefacturation->Location = System::Drawing::Point(1348, 318);
 			this->labelidadressefacturation->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labelidadressefacturation->Name = L"labelidadressefacturation";
 			this->labelidadressefacturation->Size = System::Drawing::Size(104, 28);
@@ -1332,7 +1381,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_adressepostalefacturation
 			// 
-			this->text_adressepostalefacturation->Location = System::Drawing::Point(1216, 434);
+			this->text_adressepostalefacturation->Location = System::Drawing::Point(1345, 434);
 			this->text_adressepostalefacturation->Margin = System::Windows::Forms::Padding(2);
 			this->text_adressepostalefacturation->Name = L"text_adressepostalefacturation";
 			this->text_adressepostalefacturation->Size = System::Drawing::Size(224, 26);
@@ -1340,7 +1389,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_paysfacturation
 			// 
-			this->text_paysfacturation->Location = System::Drawing::Point(1216, 676);
+			this->text_paysfacturation->Location = System::Drawing::Point(1345, 676);
 			this->text_paysfacturation->Margin = System::Windows::Forms::Padding(2);
 			this->text_paysfacturation->Name = L"text_paysfacturation";
 			this->text_paysfacturation->Size = System::Drawing::Size(224, 26);
@@ -1348,7 +1397,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_villefacturation
 			// 
-			this->text_villefacturation->Location = System::Drawing::Point(1216, 602);
+			this->text_villefacturation->Location = System::Drawing::Point(1345, 602);
 			this->text_villefacturation->Margin = System::Windows::Forms::Padding(2);
 			this->text_villefacturation->Name = L"text_villefacturation";
 			this->text_villefacturation->Size = System::Drawing::Size(224, 26);
@@ -1356,7 +1405,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_codepostalefacturation
 			// 
-			this->text_codepostalefacturation->Location = System::Drawing::Point(1216, 516);
+			this->text_codepostalefacturation->Location = System::Drawing::Point(1345, 516);
 			this->text_codepostalefacturation->Margin = System::Windows::Forms::Padding(2);
 			this->text_codepostalefacturation->Name = L"text_codepostalefacturation";
 			this->text_codepostalefacturation->Size = System::Drawing::Size(224, 26);
@@ -1364,7 +1413,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_idadressefacturation
 			// 
-			this->text_idadressefacturation->Location = System::Drawing::Point(1216, 348);
+			this->text_idadressefacturation->Location = System::Drawing::Point(1345, 348);
 			this->text_idadressefacturation->Margin = System::Windows::Forms::Padding(2);
 			this->text_idadressefacturation->Name = L"text_idadressefacturation";
 			this->text_idadressefacturation->Size = System::Drawing::Size(224, 26);
@@ -1376,12 +1425,12 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->labelchampclient->BackColor = System::Drawing::Color::Transparent;
 			this->labelchampclient->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
 			this->labelchampclient->ForeColor = System::Drawing::Color::White;
-			this->labelchampclient->Location = System::Drawing::Point(167, 285);
+			this->labelchampclient->Location = System::Drawing::Point(160, 236);
 			this->labelchampclient->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labelchampclient->Name = L"labelchampclient";
-			this->labelchampclient->Size = System::Drawing::Size(166, 32);
+			this->labelchampclient->Size = System::Drawing::Size(280, 32);
 			this->labelchampclient->TabIndex = 39;
-			this->labelchampclient->Text = L"Champ Client";
+			this->labelchampclient->Text = L"Informations générales";
 			// 
 			// label18
 			// 
@@ -1389,7 +1438,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label18->BackColor = System::Drawing::Color::Transparent;
 			this->label18->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
 			this->label18->ForeColor = System::Drawing::Color::White;
-			this->label18->Location = System::Drawing::Point(1210, 285);
+			this->label18->Location = System::Drawing::Point(1339, 236);
 			this->label18->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(273, 32);
@@ -1402,7 +1451,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label17->BackColor = System::Drawing::Color::Transparent;
 			this->label17->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
 			this->label17->ForeColor = System::Drawing::Color::White;
-			this->label17->Location = System::Drawing::Point(687, 285);
+			this->label17->Location = System::Drawing::Point(789, 236);
 			this->label17->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(244, 32);
@@ -1426,7 +1475,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->labelpayslivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelpayslivraison->ForeColor = System::Drawing::Color::White;
-			this->labelpayslivraison->Location = System::Drawing::Point(696, 646);
+			this->labelpayslivraison->Location = System::Drawing::Point(798, 646);
 			this->labelpayslivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labelpayslivraison->Name = L"labelpayslivraison";
 			this->labelpayslivraison->Size = System::Drawing::Size(50, 28);
@@ -1440,7 +1489,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->labelvillelivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelvillelivraison->ForeColor = System::Drawing::Color::White;
-			this->labelvillelivraison->Location = System::Drawing::Point(696, 572);
+			this->labelvillelivraison->Location = System::Drawing::Point(798, 572);
 			this->labelvillelivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labelvillelivraison->Name = L"labelvillelivraison";
 			this->labelvillelivraison->Size = System::Drawing::Size(49, 28);
@@ -1454,7 +1503,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->labelcodepostalelivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelcodepostalelivraison->ForeColor = System::Drawing::Color::White;
-			this->labelcodepostalelivraison->Location = System::Drawing::Point(696, 486);
+			this->labelcodepostalelivraison->Location = System::Drawing::Point(798, 486);
 			this->labelcodepostalelivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labelcodepostalelivraison->Name = L"labelcodepostalelivraison";
 			this->labelcodepostalelivraison->Size = System::Drawing::Size(125, 28);
@@ -1468,7 +1517,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->labeladressepostlivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labeladressepostlivraison->ForeColor = System::Drawing::Color::White;
-			this->labeladressepostlivraison->Location = System::Drawing::Point(696, 404);
+			this->labeladressepostlivraison->Location = System::Drawing::Point(798, 404);
 			this->labeladressepostlivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labeladressepostlivraison->Name = L"labeladressepostlivraison";
 			this->labeladressepostlivraison->Size = System::Drawing::Size(147, 28);
@@ -1482,7 +1531,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->labelidadresselivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelidadresselivraison->ForeColor = System::Drawing::Color::White;
-			this->labelidadresselivraison->Location = System::Drawing::Point(696, 317);
+			this->labelidadresselivraison->Location = System::Drawing::Point(798, 317);
 			this->labelidadresselivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labelidadresselivraison->Name = L"labelidadresselivraison";
 			this->labelidadresselivraison->Size = System::Drawing::Size(104, 28);
@@ -1492,7 +1541,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_adressepostalelivraison
 			// 
-			this->text_adressepostalelivraison->Location = System::Drawing::Point(693, 434);
+			this->text_adressepostalelivraison->Location = System::Drawing::Point(795, 434);
 			this->text_adressepostalelivraison->Margin = System::Windows::Forms::Padding(2);
 			this->text_adressepostalelivraison->Name = L"text_adressepostalelivraison";
 			this->text_adressepostalelivraison->Size = System::Drawing::Size(224, 26);
@@ -1500,7 +1549,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_payslivraison
 			// 
-			this->text_payslivraison->Location = System::Drawing::Point(693, 676);
+			this->text_payslivraison->Location = System::Drawing::Point(795, 676);
 			this->text_payslivraison->Margin = System::Windows::Forms::Padding(2);
 			this->text_payslivraison->Name = L"text_payslivraison";
 			this->text_payslivraison->Size = System::Drawing::Size(224, 26);
@@ -1508,23 +1557,23 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_villelivraison
 			// 
-			this->text_villelivraison->Location = System::Drawing::Point(693, 602);
+			this->text_villelivraison->Location = System::Drawing::Point(795, 602);
 			this->text_villelivraison->Margin = System::Windows::Forms::Padding(2);
 			this->text_villelivraison->Name = L"text_villelivraison";
 			this->text_villelivraison->Size = System::Drawing::Size(224, 26);
 			this->text_villelivraison->TabIndex = 17;
 			// 
-			// textBox9Atext_codepostalelivraison
+			// text_codepostalelivraison
 			// 
-			this->textBox9Atext_codepostalelivraison->Location = System::Drawing::Point(693, 516);
-			this->textBox9Atext_codepostalelivraison->Margin = System::Windows::Forms::Padding(2);
-			this->textBox9Atext_codepostalelivraison->Name = L"textBox9Atext_codepostalelivraison";
-			this->textBox9Atext_codepostalelivraison->Size = System::Drawing::Size(224, 26);
-			this->textBox9Atext_codepostalelivraison->TabIndex = 16;
+			this->text_codepostalelivraison->Location = System::Drawing::Point(795, 516);
+			this->text_codepostalelivraison->Margin = System::Windows::Forms::Padding(2);
+			this->text_codepostalelivraison->Name = L"text_codepostalelivraison";
+			this->text_codepostalelivraison->Size = System::Drawing::Size(224, 26);
+			this->text_codepostalelivraison->TabIndex = 16;
 			// 
 			// text_idadresselivraison
 			// 
-			this->text_idadresselivraison->Location = System::Drawing::Point(693, 348);
+			this->text_idadresselivraison->Location = System::Drawing::Point(795, 348);
 			this->text_idadresselivraison->Margin = System::Windows::Forms::Padding(2);
 			this->text_idadresselivraison->Name = L"text_idadresselivraison";
 			this->text_idadresselivraison->Size = System::Drawing::Size(224, 26);
@@ -1646,6 +1695,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->dataGridView_gestclient->Location = System::Drawing::Point(13, 960);
 			this->dataGridView_gestclient->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView_gestclient->Name = L"dataGridView_gestclient";
+			this->dataGridView_gestclient->ReadOnly = true;
 			this->dataGridView_gestclient->RowHeadersWidth = 62;
 			this->dataGridView_gestclient->RowTemplate->Height = 28;
 			this->dataGridView_gestclient->Size = System::Drawing::Size(1730, 300);
@@ -1665,15 +1715,19 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// Panel_Gestion_Commandes
 			// 
-			this->Panel_Gestion_Commandes->Controls->Add(this->bunifuThinButton25);
-			this->Panel_Gestion_Commandes->Controls->Add(this->label5);
-			this->Panel_Gestion_Commandes->Controls->Add(this->label6);
-			this->Panel_Gestion_Commandes->Controls->Add(this->textBox3);
-			this->Panel_Gestion_Commandes->Controls->Add(this->textBox5);
-			this->Panel_Gestion_Commandes->Controls->Add(this->label2);
-			this->Panel_Gestion_Commandes->Controls->Add(this->label4);
-			this->Panel_Gestion_Commandes->Controls->Add(this->textBox1);
-			this->Panel_Gestion_Commandes->Controls->Add(this->textBox2);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label8);
+			this->Panel_Gestion_Commandes->Controls->Add(this->textBox13);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label7);
+			this->Panel_Gestion_Commandes->Controls->Add(this->textBox6);
+			this->Panel_Gestion_Commandes->Controls->Add(this->button2_nouveau);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label_payssociete);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label_codepostsociete);
+			this->Panel_Gestion_Commandes->Controls->Add(this->text_payssociete);
+			this->Panel_Gestion_Commandes->Controls->Add(this->text_codepostsociete);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label_villesociete);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label_adressepostsociete);
+			this->Panel_Gestion_Commandes->Controls->Add(this->text_villesociete);
+			this->Panel_Gestion_Commandes->Controls->Add(this->text_adressepostsociete);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label_datepaiement);
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_datepaiement);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label2_paiementcommande);
@@ -1688,22 +1742,22 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->Panel_Gestion_Commandes->Controls->Add(this->label_montanttotTVA);
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_montanttotTVA);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label2_informationsgen);
-			this->Panel_Gestion_Commandes->Controls->Add(this->bunifuThinButton21);
-			this->Panel_Gestion_Commandes->Controls->Add(this->bunifuThinButton22);
-			this->Panel_Gestion_Commandes->Controls->Add(this->bunifuThinButton23);
-			this->Panel_Gestion_Commandes->Controls->Add(this->bunifuThinButton24);
+			this->Panel_Gestion_Commandes->Controls->Add(this->button2_supprimer);
+			this->Panel_Gestion_Commandes->Controls->Add(this->button2_modifier);
+			this->Panel_Gestion_Commandes->Controls->Add(this->button2_ajouter);
+			this->Panel_Gestion_Commandes->Controls->Add(this->button2_afficher);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label10);
-			this->Panel_Gestion_Commandes->Controls->Add(this->textBox7);
-			this->Panel_Gestion_Commandes->Controls->Add(this->label11);
-			this->Panel_Gestion_Commandes->Controls->Add(this->label12);
-			this->Panel_Gestion_Commandes->Controls->Add(this->label13);
-			this->Panel_Gestion_Commandes->Controls->Add(this->label14);
-			this->Panel_Gestion_Commandes->Controls->Add(this->label15);
-			this->Panel_Gestion_Commandes->Controls->Add(this->textBox8);
-			this->Panel_Gestion_Commandes->Controls->Add(this->textBox9);
-			this->Panel_Gestion_Commandes->Controls->Add(this->textBox10);
-			this->Panel_Gestion_Commandes->Controls->Add(this->textBox11);
-			this->Panel_Gestion_Commandes->Controls->Add(this->textBox12);
+			this->Panel_Gestion_Commandes->Controls->Add(this->text_messagecommande);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label_soldereglement);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label_idadressesociete);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label_societe);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label_nmservice);
+			this->Panel_Gestion_Commandes->Controls->Add(this->label_idfacture);
+			this->Panel_Gestion_Commandes->Controls->Add(this->text_nmservice);
+			this->Panel_Gestion_Commandes->Controls->Add(this->text_soldereglement);
+			this->Panel_Gestion_Commandes->Controls->Add(this->text_idadressesociete);
+			this->Panel_Gestion_Commandes->Controls->Add(this->text_societe);
+			this->Panel_Gestion_Commandes->Controls->Add(this->text_idfacture);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label_datelivraison);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label_monanttotHT);
 			this->Panel_Gestion_Commandes->Controls->Add(this->label2_idclientcommande);
@@ -1712,12 +1766,12 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_datelivraison);
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_montanttotHT);
 			this->Panel_Gestion_Commandes->Controls->Add(this->text_refcommande);
-			this->Panel_Gestion_Commandes->Controls->Add(this->dataGridView2);
+			this->Panel_Gestion_Commandes->Controls->Add(this->dataGridView_gestcommande);
 			this->Panel_Gestion_Commandes->Controls->Add(this->Title_Gestion_Commandes);
-			this->Panel_Gestion_Commandes->Location = System::Drawing::Point(412, 14);
+			this->Panel_Gestion_Commandes->Location = System::Drawing::Point(397, 14);
 			this->Panel_Gestion_Commandes->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->Panel_Gestion_Commandes->Name = L"Panel_Gestion_Commandes";
-			this->Panel_Gestion_Commandes->Size = System::Drawing::Size(1775, 1276);
+			this->Panel_Gestion_Commandes->Size = System::Drawing::Size(1790, 1276);
 			this->Panel_Gestion_Commandes->TabIndex = 4;
 			this->Panel_Gestion_Commandes->Visible = false;
 			// 
@@ -1728,7 +1782,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label_datepaiement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_datepaiement->ForeColor = System::Drawing::Color::White;
-			this->label_datepaiement->Location = System::Drawing::Point(846, 501);
+			this->label_datepaiement->Location = System::Drawing::Point(846, 531);
 			this->label_datepaiement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_datepaiement->Name = L"label_datepaiement";
 			this->label_datepaiement->Size = System::Drawing::Size(301, 28);
@@ -1737,7 +1791,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_datepaiement
 			// 
-			this->text_datepaiement->Location = System::Drawing::Point(851, 532);
+			this->text_datepaiement->Location = System::Drawing::Point(851, 562);
 			this->text_datepaiement->Margin = System::Windows::Forms::Padding(2);
 			this->text_datepaiement->Name = L"text_datepaiement";
 			this->text_datepaiement->Size = System::Drawing::Size(287, 26);
@@ -1763,7 +1817,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label_mypaiement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_mypaiement->ForeColor = System::Drawing::Color::White;
-			this->label_mypaiement->Location = System::Drawing::Point(846, 418);
+			this->label_mypaiement->Location = System::Drawing::Point(846, 417);
 			this->label_mypaiement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_mypaiement->Name = L"label_mypaiement";
 			this->label_mypaiement->Size = System::Drawing::Size(187, 28);
@@ -1777,7 +1831,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label_nbpaiement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_nbpaiement->ForeColor = System::Drawing::Color::White;
-			this->label_nbpaiement->Location = System::Drawing::Point(846, 333);
+			this->label_nbpaiement->Location = System::Drawing::Point(846, 307);
 			this->label_nbpaiement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_nbpaiement->Name = L"label_nbpaiement";
 			this->label_nbpaiement->Size = System::Drawing::Size(207, 28);
@@ -1786,7 +1840,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_mypaiement
 			// 
-			this->text_mypaiement->Location = System::Drawing::Point(851, 448);
+			this->text_mypaiement->Location = System::Drawing::Point(851, 447);
 			this->text_mypaiement->Margin = System::Windows::Forms::Padding(2);
 			this->text_mypaiement->Name = L"text_mypaiement";
 			this->text_mypaiement->Size = System::Drawing::Size(287, 26);
@@ -1794,7 +1848,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_nbpaiement
 			// 
-			this->text_nbpaiement->Location = System::Drawing::Point(851, 363);
+			this->text_nbpaiement->Location = System::Drawing::Point(851, 337);
 			this->text_nbpaiement->Margin = System::Windows::Forms::Padding(2);
 			this->text_nbpaiement->Name = L"text_nbpaiement";
 			this->text_nbpaiement->Size = System::Drawing::Size(287, 26);
@@ -1807,7 +1861,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label_dateemission->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_dateemission->ForeColor = System::Drawing::Color::White;
-			this->label_dateemission->Location = System::Drawing::Point(409, 583);
+			this->label_dateemission->Location = System::Drawing::Point(409, 642);
 			this->label_dateemission->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_dateemission->Name = L"label_dateemission";
 			this->label_dateemission->Size = System::Drawing::Size(285, 28);
@@ -1816,7 +1870,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_dateemission
 			// 
-			this->text_dateemission->Location = System::Drawing::Point(414, 614);
+			this->text_dateemission->Location = System::Drawing::Point(414, 673);
 			this->text_dateemission->Margin = System::Windows::Forms::Padding(2);
 			this->text_dateemission->Name = L"text_dateemission";
 			this->text_dateemission->Size = System::Drawing::Size(287, 26);
@@ -1829,7 +1883,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label_montanttotTTC->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_montanttotTTC->ForeColor = System::Drawing::Color::White;
-			this->label_montanttotTTC->Location = System::Drawing::Point(530, 498);
+			this->label_montanttotTTC->Location = System::Drawing::Point(530, 528);
 			this->label_montanttotTTC->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_montanttotTTC->Name = L"label_montanttotTTC";
 			this->label_montanttotTTC->Size = System::Drawing::Size(170, 28);
@@ -1838,7 +1892,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_montanttotTTC
 			// 
-			this->text_montanttotTTC->Location = System::Drawing::Point(535, 528);
+			this->text_montanttotTTC->Location = System::Drawing::Point(535, 558);
 			this->text_montanttotTTC->Margin = System::Windows::Forms::Padding(2);
 			this->text_montanttotTTC->Name = L"text_montanttotTTC";
 			this->text_montanttotTTC->Size = System::Drawing::Size(165, 26);
@@ -1851,7 +1905,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label_montanttotTVA->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_montanttotTVA->ForeColor = System::Drawing::Color::White;
-			this->label_montanttotTVA->Location = System::Drawing::Point(319, 498);
+			this->label_montanttotTVA->Location = System::Drawing::Point(319, 528);
 			this->label_montanttotTVA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_montanttotTVA->Name = L"label_montanttotTVA";
 			this->label_montanttotTVA->Size = System::Drawing::Size(173, 28);
@@ -1860,7 +1914,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_montanttotTVA
 			// 
-			this->text_montanttotTVA->Location = System::Drawing::Point(324, 528);
+			this->text_montanttotTVA->Location = System::Drawing::Point(324, 558);
 			this->text_montanttotTVA->Margin = System::Windows::Forms::Padding(2);
 			this->text_montanttotTVA->Name = L"text_montanttotTVA";
 			this->text_montanttotTVA->Size = System::Drawing::Size(165, 26);
@@ -1879,113 +1933,113 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label2_informationsgen->TabIndex = 93;
 			this->label2_informationsgen->Text = L"Informations générales";
 			// 
-			// bunifuThinButton21
+			// button2_supprimer
 			// 
-			this->bunifuThinButton21->ActiveBorderThickness = 1;
-			this->bunifuThinButton21->ActiveCornerRadius = 20;
-			this->bunifuThinButton21->ActiveFillColor = System::Drawing::Color::Transparent;
-			this->bunifuThinButton21->ActiveForecolor = System::Drawing::Color::White;
-			this->bunifuThinButton21->ActiveLineColor = System::Drawing::Color::SeaGreen;
-			this->bunifuThinButton21->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
+			this->button2_supprimer->ActiveBorderThickness = 1;
+			this->button2_supprimer->ActiveCornerRadius = 20;
+			this->button2_supprimer->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->button2_supprimer->ActiveForecolor = System::Drawing::Color::White;
+			this->button2_supprimer->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->button2_supprimer->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
 				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
-			this->bunifuThinButton21->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton21.BackgroundImage")));
-			this->bunifuThinButton21->ButtonText = L"SUPPRIMER";
-			this->bunifuThinButton21->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->bunifuThinButton21->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button2_supprimer->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2_supprimer.BackgroundImage")));
+			this->button2_supprimer->ButtonText = L"SUPPRIMER";
+			this->button2_supprimer->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button2_supprimer->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->bunifuThinButton21->ForeColor = System::Drawing::Color::White;
-			this->bunifuThinButton21->IdleBorderThickness = 1;
-			this->bunifuThinButton21->IdleCornerRadius = 20;
-			this->bunifuThinButton21->IdleFillColor = System::Drawing::Color::Transparent;
-			this->bunifuThinButton21->IdleForecolor = System::Drawing::Color::White;
-			this->bunifuThinButton21->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton21->Location = System::Drawing::Point(1095, 764);
-			this->bunifuThinButton21->Margin = System::Windows::Forms::Padding(5);
-			this->bunifuThinButton21->Name = L"bunifuThinButton21";
-			this->bunifuThinButton21->Size = System::Drawing::Size(273, 72);
-			this->bunifuThinButton21->TabIndex = 92;
-			this->bunifuThinButton21->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button2_supprimer->ForeColor = System::Drawing::Color::White;
+			this->button2_supprimer->IdleBorderThickness = 1;
+			this->button2_supprimer->IdleCornerRadius = 20;
+			this->button2_supprimer->IdleFillColor = System::Drawing::Color::Transparent;
+			this->button2_supprimer->IdleForecolor = System::Drawing::Color::White;
+			this->button2_supprimer->IdleLineColor = System::Drawing::Color::White;
+			this->button2_supprimer->Location = System::Drawing::Point(1095, 764);
+			this->button2_supprimer->Margin = System::Windows::Forms::Padding(5);
+			this->button2_supprimer->Name = L"button2_supprimer";
+			this->button2_supprimer->Size = System::Drawing::Size(273, 72);
+			this->button2_supprimer->TabIndex = 92;
+			this->button2_supprimer->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// bunifuThinButton22
+			// button2_modifier
 			// 
-			this->bunifuThinButton22->ActiveBorderThickness = 1;
-			this->bunifuThinButton22->ActiveCornerRadius = 20;
-			this->bunifuThinButton22->ActiveFillColor = System::Drawing::Color::Transparent;
-			this->bunifuThinButton22->ActiveForecolor = System::Drawing::Color::White;
-			this->bunifuThinButton22->ActiveLineColor = System::Drawing::Color::SeaGreen;
-			this->bunifuThinButton22->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
-				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
-			this->bunifuThinButton22->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton22.BackgroundImage")));
-			this->bunifuThinButton22->ButtonText = L"MODIFIER";
-			this->bunifuThinButton22->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->bunifuThinButton22->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button2_modifier->ActiveBorderThickness = 1;
+			this->button2_modifier->ActiveCornerRadius = 20;
+			this->button2_modifier->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->button2_modifier->ActiveForecolor = System::Drawing::Color::White;
+			this->button2_modifier->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->button2_modifier->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)), static_cast<System::Int32>(static_cast<System::Byte>(51)),
+				static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->button2_modifier->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2_modifier.BackgroundImage")));
+			this->button2_modifier->ButtonText = L"MODIFIER";
+			this->button2_modifier->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button2_modifier->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->bunifuThinButton22->ForeColor = System::Drawing::Color::White;
-			this->bunifuThinButton22->IdleBorderThickness = 1;
-			this->bunifuThinButton22->IdleCornerRadius = 20;
-			this->bunifuThinButton22->IdleFillColor = System::Drawing::Color::Transparent;
-			this->bunifuThinButton22->IdleForecolor = System::Drawing::Color::White;
-			this->bunifuThinButton22->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton22->Location = System::Drawing::Point(753, 764);
-			this->bunifuThinButton22->Margin = System::Windows::Forms::Padding(5);
-			this->bunifuThinButton22->Name = L"bunifuThinButton22";
-			this->bunifuThinButton22->Size = System::Drawing::Size(275, 72);
-			this->bunifuThinButton22->TabIndex = 91;
-			this->bunifuThinButton22->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button2_modifier->ForeColor = System::Drawing::Color::White;
+			this->button2_modifier->IdleBorderThickness = 1;
+			this->button2_modifier->IdleCornerRadius = 20;
+			this->button2_modifier->IdleFillColor = System::Drawing::Color::Transparent;
+			this->button2_modifier->IdleForecolor = System::Drawing::Color::White;
+			this->button2_modifier->IdleLineColor = System::Drawing::Color::White;
+			this->button2_modifier->Location = System::Drawing::Point(753, 764);
+			this->button2_modifier->Margin = System::Windows::Forms::Padding(5);
+			this->button2_modifier->Name = L"button2_modifier";
+			this->button2_modifier->Size = System::Drawing::Size(275, 72);
+			this->button2_modifier->TabIndex = 91;
+			this->button2_modifier->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// bunifuThinButton23
+			// button2_ajouter
 			// 
-			this->bunifuThinButton23->ActiveBorderThickness = 1;
-			this->bunifuThinButton23->ActiveCornerRadius = 20;
-			this->bunifuThinButton23->ActiveFillColor = System::Drawing::Color::Transparent;
-			this->bunifuThinButton23->ActiveForecolor = System::Drawing::Color::White;
-			this->bunifuThinButton23->ActiveLineColor = System::Drawing::Color::SeaGreen;
-			this->bunifuThinButton23->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
-				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
-			this->bunifuThinButton23->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton23.BackgroundImage")));
-			this->bunifuThinButton23->ButtonText = L"AJOUTER";
-			this->bunifuThinButton23->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->bunifuThinButton23->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button2_ajouter->ActiveBorderThickness = 1;
+			this->button2_ajouter->ActiveCornerRadius = 20;
+			this->button2_ajouter->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->button2_ajouter->ActiveForecolor = System::Drawing::Color::White;
+			this->button2_ajouter->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->button2_ajouter->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)), static_cast<System::Int32>(static_cast<System::Byte>(51)),
+				static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->button2_ajouter->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2_ajouter.BackgroundImage")));
+			this->button2_ajouter->ButtonText = L"AJOUTER";
+			this->button2_ajouter->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button2_ajouter->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->bunifuThinButton23->ForeColor = System::Drawing::Color::White;
-			this->bunifuThinButton23->IdleBorderThickness = 1;
-			this->bunifuThinButton23->IdleCornerRadius = 20;
-			this->bunifuThinButton23->IdleFillColor = System::Drawing::Color::Transparent;
-			this->bunifuThinButton23->IdleForecolor = System::Drawing::Color::White;
-			this->bunifuThinButton23->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton23->Location = System::Drawing::Point(414, 764);
-			this->bunifuThinButton23->Margin = System::Windows::Forms::Padding(5);
-			this->bunifuThinButton23->Name = L"bunifuThinButton23";
-			this->bunifuThinButton23->Size = System::Drawing::Size(274, 72);
-			this->bunifuThinButton23->TabIndex = 90;
-			this->bunifuThinButton23->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button2_ajouter->ForeColor = System::Drawing::Color::White;
+			this->button2_ajouter->IdleBorderThickness = 1;
+			this->button2_ajouter->IdleCornerRadius = 20;
+			this->button2_ajouter->IdleFillColor = System::Drawing::Color::Transparent;
+			this->button2_ajouter->IdleForecolor = System::Drawing::Color::White;
+			this->button2_ajouter->IdleLineColor = System::Drawing::Color::White;
+			this->button2_ajouter->Location = System::Drawing::Point(414, 764);
+			this->button2_ajouter->Margin = System::Windows::Forms::Padding(5);
+			this->button2_ajouter->Name = L"button2_ajouter";
+			this->button2_ajouter->Size = System::Drawing::Size(274, 72);
+			this->button2_ajouter->TabIndex = 90;
+			this->button2_ajouter->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// bunifuThinButton24
+			// button2_afficher
 			// 
-			this->bunifuThinButton24->ActiveBorderThickness = 1;
-			this->bunifuThinButton24->ActiveCornerRadius = 20;
-			this->bunifuThinButton24->ActiveFillColor = System::Drawing::Color::Transparent;
-			this->bunifuThinButton24->ActiveForecolor = System::Drawing::Color::White;
-			this->bunifuThinButton24->ActiveLineColor = System::Drawing::Color::SeaGreen;
-			this->bunifuThinButton24->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
-				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
-			this->bunifuThinButton24->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton24.BackgroundImage")));
-			this->bunifuThinButton24->ButtonText = L"AFFICHER";
-			this->bunifuThinButton24->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->bunifuThinButton24->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button2_afficher->ActiveBorderThickness = 1;
+			this->button2_afficher->ActiveCornerRadius = 20;
+			this->button2_afficher->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->button2_afficher->ActiveForecolor = System::Drawing::Color::White;
+			this->button2_afficher->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->button2_afficher->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)), static_cast<System::Int32>(static_cast<System::Byte>(51)),
+				static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->button2_afficher->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2_afficher.BackgroundImage")));
+			this->button2_afficher->ButtonText = L"AFFICHER";
+			this->button2_afficher->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button2_afficher->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->bunifuThinButton24->ForeColor = System::Drawing::Color::White;
-			this->bunifuThinButton24->IdleBorderThickness = 1;
-			this->bunifuThinButton24->IdleCornerRadius = 20;
-			this->bunifuThinButton24->IdleFillColor = System::Drawing::Color::Transparent;
-			this->bunifuThinButton24->IdleForecolor = System::Drawing::Color::White;
-			this->bunifuThinButton24->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton24->Location = System::Drawing::Point(73, 764);
-			this->bunifuThinButton24->Margin = System::Windows::Forms::Padding(5);
-			this->bunifuThinButton24->Name = L"bunifuThinButton24";
-			this->bunifuThinButton24->Size = System::Drawing::Size(271, 72);
-			this->bunifuThinButton24->TabIndex = 89;
-			this->bunifuThinButton24->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button2_afficher->ForeColor = System::Drawing::Color::White;
+			this->button2_afficher->IdleBorderThickness = 1;
+			this->button2_afficher->IdleCornerRadius = 20;
+			this->button2_afficher->IdleFillColor = System::Drawing::Color::Transparent;
+			this->button2_afficher->IdleForecolor = System::Drawing::Color::White;
+			this->button2_afficher->IdleLineColor = System::Drawing::Color::White;
+			this->button2_afficher->Location = System::Drawing::Point(73, 764);
+			this->button2_afficher->Margin = System::Windows::Forms::Padding(5);
+			this->button2_afficher->Name = L"button2_afficher";
+			this->button2_afficher->Size = System::Drawing::Size(271, 72);
+			this->button2_afficher->TabIndex = 89;
+			this->button2_afficher->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label10
 			// 
@@ -2000,125 +2054,126 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label10->TabIndex = 76;
 			this->label10->Text = L"Informations Facturation";
 			// 
-			// textBox7
+			// text_messagecommande
 			// 
-			this->textBox7->Location = System::Drawing::Point(15, 854);
-			this->textBox7->Margin = System::Windows::Forms::Padding(2);
-			this->textBox7->Multiline = true;
-			this->textBox7->Name = L"textBox7";
-			this->textBox7->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
-			this->textBox7->Size = System::Drawing::Size(1736, 58);
-			this->textBox7->TabIndex = 75;
+			this->text_messagecommande->Location = System::Drawing::Point(15, 854);
+			this->text_messagecommande->Margin = System::Windows::Forms::Padding(2);
+			this->text_messagecommande->Multiline = true;
+			this->text_messagecommande->Name = L"text_messagecommande";
+			this->text_messagecommande->ReadOnly = true;
+			this->text_messagecommande->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
+			this->text_messagecommande->Size = System::Drawing::Size(1719, 58);
+			this->text_messagecommande->TabIndex = 75;
 			// 
-			// label11
+			// label_soldereglement
 			// 
-			this->label11->AutoSize = true;
-			this->label11->BackColor = System::Drawing::Color::Transparent;
-			this->label11->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label_soldereglement->AutoSize = true;
+			this->label_soldereglement->BackColor = System::Drawing::Color::Transparent;
+			this->label_soldereglement->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label11->ForeColor = System::Drawing::Color::White;
-			this->label11->Location = System::Drawing::Point(848, 584);
-			this->label11->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(183, 28);
-			this->label11->TabIndex = 74;
-			this->label11->Text = L"Solde de règlement";
+			this->label_soldereglement->ForeColor = System::Drawing::Color::White;
+			this->label_soldereglement->Location = System::Drawing::Point(846, 642);
+			this->label_soldereglement->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_soldereglement->Name = L"label_soldereglement";
+			this->label_soldereglement->Size = System::Drawing::Size(183, 28);
+			this->label_soldereglement->TabIndex = 74;
+			this->label_soldereglement->Text = L"Solde de règlement";
 			// 
-			// label12
+			// label_idadressesociete
 			// 
-			this->label12->AutoSize = true;
-			this->label12->BackColor = System::Drawing::Color::Transparent;
-			this->label12->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label_idadressesociete->AutoSize = true;
+			this->label_idadressesociete->BackColor = System::Drawing::Color::Transparent;
+			this->label_idadressesociete->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label12->ForeColor = System::Drawing::Color::White;
-			this->label12->Location = System::Drawing::Point(1515, 471);
-			this->label12->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(104, 28);
-			this->label12->TabIndex = 73;
-			this->label12->Text = L"ID Adresse";
+			this->label_idadressesociete->ForeColor = System::Drawing::Color::White;
+			this->label_idadressesociete->Location = System::Drawing::Point(1515, 471);
+			this->label_idadressesociete->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_idadressesociete->Name = L"label_idadressesociete";
+			this->label_idadressesociete->Size = System::Drawing::Size(104, 28);
+			this->label_idadressesociete->TabIndex = 73;
+			this->label_idadressesociete->Text = L"ID Adresse";
 			// 
-			// label13
+			// label_societe
 			// 
-			this->label13->AutoSize = true;
-			this->label13->BackColor = System::Drawing::Color::Transparent;
-			this->label13->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label_societe->AutoSize = true;
+			this->label_societe->BackColor = System::Drawing::Color::Transparent;
+			this->label_societe->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label13->ForeColor = System::Drawing::Color::White;
-			this->label13->Location = System::Drawing::Point(1318, 473);
-			this->label13->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(76, 28);
-			this->label13->TabIndex = 72;
-			this->label13->Text = L"Societe";
+			this->label_societe->ForeColor = System::Drawing::Color::White;
+			this->label_societe->Location = System::Drawing::Point(1318, 473);
+			this->label_societe->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_societe->Name = L"label_societe";
+			this->label_societe->Size = System::Drawing::Size(76, 28);
+			this->label_societe->TabIndex = 72;
+			this->label_societe->Text = L"Société";
 			// 
-			// label14
+			// label_nmservice
 			// 
-			this->label14->AutoSize = true;
-			this->label14->BackColor = System::Drawing::Color::Transparent;
-			this->label14->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label_nmservice->AutoSize = true;
+			this->label_nmservice->BackColor = System::Drawing::Color::Transparent;
+			this->label_nmservice->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label14->ForeColor = System::Drawing::Color::White;
-			this->label14->Location = System::Drawing::Point(1318, 391);
-			this->label14->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(227, 28);
-			this->label14->TabIndex = 71;
-			this->label14->Text = L"Numéro de service client";
+			this->label_nmservice->ForeColor = System::Drawing::Color::White;
+			this->label_nmservice->Location = System::Drawing::Point(1318, 391);
+			this->label_nmservice->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_nmservice->Name = L"label_nmservice";
+			this->label_nmservice->Size = System::Drawing::Size(227, 28);
+			this->label_nmservice->TabIndex = 71;
+			this->label_nmservice->Text = L"Numéro de service client";
 			// 
-			// label15
+			// label_idfacture
 			// 
-			this->label15->AutoSize = true;
-			this->label15->BackColor = System::Drawing::Color::Transparent;
-			this->label15->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label_idfacture->AutoSize = true;
+			this->label_idfacture->BackColor = System::Drawing::Color::Transparent;
+			this->label_idfacture->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label15->ForeColor = System::Drawing::Color::White;
-			this->label15->Location = System::Drawing::Point(1318, 303);
-			this->label15->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(99, 28);
-			this->label15->TabIndex = 70;
-			this->label15->Text = L"ID Facture";
+			this->label_idfacture->ForeColor = System::Drawing::Color::White;
+			this->label_idfacture->Location = System::Drawing::Point(1318, 303);
+			this->label_idfacture->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_idfacture->Name = L"label_idfacture";
+			this->label_idfacture->Size = System::Drawing::Size(99, 28);
+			this->label_idfacture->TabIndex = 70;
+			this->label_idfacture->Text = L"ID Facture";
 			// 
-			// textBox8
+			// text_nmservice
 			// 
-			this->textBox8->Location = System::Drawing::Point(1323, 421);
-			this->textBox8->Margin = System::Windows::Forms::Padding(2);
-			this->textBox8->Name = L"textBox8";
-			this->textBox8->Size = System::Drawing::Size(307, 26);
-			this->textBox8->TabIndex = 69;
+			this->text_nmservice->Location = System::Drawing::Point(1323, 421);
+			this->text_nmservice->Margin = System::Windows::Forms::Padding(2);
+			this->text_nmservice->Name = L"text_nmservice";
+			this->text_nmservice->Size = System::Drawing::Size(307, 26);
+			this->text_nmservice->TabIndex = 69;
 			// 
-			// textBox9
+			// text_soldereglement
 			// 
-			this->textBox9->Location = System::Drawing::Point(853, 614);
-			this->textBox9->Margin = System::Windows::Forms::Padding(2);
-			this->textBox9->Name = L"textBox9";
-			this->textBox9->Size = System::Drawing::Size(285, 26);
-			this->textBox9->TabIndex = 68;
+			this->text_soldereglement->Location = System::Drawing::Point(851, 672);
+			this->text_soldereglement->Margin = System::Windows::Forms::Padding(2);
+			this->text_soldereglement->Name = L"text_soldereglement";
+			this->text_soldereglement->Size = System::Drawing::Size(285, 26);
+			this->text_soldereglement->TabIndex = 68;
 			// 
-			// textBox10
+			// text_idadressesociete
 			// 
-			this->textBox10->Location = System::Drawing::Point(1520, 501);
-			this->textBox10->Margin = System::Windows::Forms::Padding(2);
-			this->textBox10->Name = L"textBox10";
-			this->textBox10->Size = System::Drawing::Size(110, 26);
-			this->textBox10->TabIndex = 67;
+			this->text_idadressesociete->Location = System::Drawing::Point(1520, 501);
+			this->text_idadressesociete->Margin = System::Windows::Forms::Padding(2);
+			this->text_idadressesociete->Name = L"text_idadressesociete";
+			this->text_idadressesociete->Size = System::Drawing::Size(110, 26);
+			this->text_idadressesociete->TabIndex = 67;
 			// 
-			// textBox11
+			// text_societe
 			// 
-			this->textBox11->Location = System::Drawing::Point(1323, 503);
-			this->textBox11->Margin = System::Windows::Forms::Padding(2);
-			this->textBox11->Name = L"textBox11";
-			this->textBox11->Size = System::Drawing::Size(171, 26);
-			this->textBox11->TabIndex = 66;
+			this->text_societe->Location = System::Drawing::Point(1323, 503);
+			this->text_societe->Margin = System::Windows::Forms::Padding(2);
+			this->text_societe->Name = L"text_societe";
+			this->text_societe->Size = System::Drawing::Size(171, 26);
+			this->text_societe->TabIndex = 66;
 			// 
-			// textBox12
+			// text_idfacture
 			// 
-			this->textBox12->Location = System::Drawing::Point(1323, 335);
-			this->textBox12->Margin = System::Windows::Forms::Padding(2);
-			this->textBox12->Name = L"textBox12";
-			this->textBox12->Size = System::Drawing::Size(307, 26);
-			this->textBox12->TabIndex = 65;
+			this->text_idfacture->Location = System::Drawing::Point(1323, 335);
+			this->text_idfacture->Margin = System::Windows::Forms::Padding(2);
+			this->text_idfacture->Name = L"text_idfacture";
+			this->text_idfacture->Size = System::Drawing::Size(307, 26);
+			this->text_idfacture->TabIndex = 65;
 			// 
 			// label_datelivraison
 			// 
@@ -2127,7 +2182,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label_datelivraison->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_datelivraison->ForeColor = System::Drawing::Color::White;
-			this->label_datelivraison->Location = System::Drawing::Point(102, 583);
+			this->label_datelivraison->Location = System::Drawing::Point(102, 642);
 			this->label_datelivraison->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_datelivraison->Name = L"label_datelivraison";
 			this->label_datelivraison->Size = System::Drawing::Size(292, 28);
@@ -2141,7 +2196,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label_monanttotHT->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label_monanttotHT->ForeColor = System::Drawing::Color::White;
-			this->label_monanttotHT->Location = System::Drawing::Point(102, 498);
+			this->label_monanttotHT->Location = System::Drawing::Point(102, 528);
 			this->label_monanttotHT->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label_monanttotHT->Name = L"label_monanttotHT";
 			this->label_monanttotHT->Size = System::Drawing::Size(163, 28);
@@ -2155,7 +2210,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->label2_idclientcommande->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2_idclientcommande->ForeColor = System::Drawing::Color::White;
-			this->label2_idclientcommande->Location = System::Drawing::Point(102, 416);
+			this->label2_idclientcommande->Location = System::Drawing::Point(102, 415);
 			this->label2_idclientcommande->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2_idclientcommande->Name = L"label2_idclientcommande";
 			this->label2_idclientcommande->Size = System::Drawing::Size(86, 28);
@@ -2169,7 +2224,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->labelref_commande->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->labelref_commande->ForeColor = System::Drawing::Color::White;
-			this->labelref_commande->Location = System::Drawing::Point(102, 329);
+			this->labelref_commande->Location = System::Drawing::Point(102, 303);
 			this->labelref_commande->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labelref_commande->Name = L"labelref_commande";
 			this->labelref_commande->Size = System::Drawing::Size(246, 28);
@@ -2178,15 +2233,15 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_idclientcommande
 			// 
-			this->text_idclientcommande->Location = System::Drawing::Point(107, 446);
+			this->text_idclientcommande->Location = System::Drawing::Point(107, 445);
 			this->text_idclientcommande->Margin = System::Windows::Forms::Padding(2);
 			this->text_idclientcommande->Name = L"text_idclientcommande";
-			this->text_idclientcommande->Size = System::Drawing::Size(593, 26);
+			this->text_idclientcommande->Size = System::Drawing::Size(165, 26);
 			this->text_idclientcommande->TabIndex = 59;
 			// 
 			// text_datelivraison
 			// 
-			this->text_datelivraison->Location = System::Drawing::Point(107, 614);
+			this->text_datelivraison->Location = System::Drawing::Point(107, 673);
 			this->text_datelivraison->Margin = System::Windows::Forms::Padding(2);
 			this->text_datelivraison->Name = L"text_datelivraison";
 			this->text_datelivraison->Size = System::Drawing::Size(287, 26);
@@ -2194,7 +2249,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_montanttotHT
 			// 
-			this->text_montanttotHT->Location = System::Drawing::Point(107, 528);
+			this->text_montanttotHT->Location = System::Drawing::Point(107, 558);
 			this->text_montanttotHT->Margin = System::Windows::Forms::Padding(2);
 			this->text_montanttotHT->Name = L"text_montanttotHT";
 			this->text_montanttotHT->Size = System::Drawing::Size(165, 26);
@@ -2202,22 +2257,22 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			// 
 			// text_refcommande
 			// 
-			this->text_refcommande->Location = System::Drawing::Point(107, 360);
+			this->text_refcommande->Location = System::Drawing::Point(107, 334);
 			this->text_refcommande->Margin = System::Windows::Forms::Padding(2);
 			this->text_refcommande->Name = L"text_refcommande";
 			this->text_refcommande->Size = System::Drawing::Size(593, 26);
 			this->text_refcommande->TabIndex = 55;
 			// 
-			// dataGridView2
+			// dataGridView_gestcommande
 			// 
-			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView2->Location = System::Drawing::Point(15, 944);
-			this->dataGridView2->Margin = System::Windows::Forms::Padding(2);
-			this->dataGridView2->Name = L"dataGridView2";
-			this->dataGridView2->RowHeadersWidth = 62;
-			this->dataGridView2->RowTemplate->Height = 28;
-			this->dataGridView2->Size = System::Drawing::Size(1730, 300);
-			this->dataGridView2->TabIndex = 54;
+			this->dataGridView_gestcommande->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView_gestcommande->Location = System::Drawing::Point(15, 944);
+			this->dataGridView_gestcommande->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridView_gestcommande->Name = L"dataGridView_gestcommande";
+			this->dataGridView_gestcommande->RowHeadersWidth = 62;
+			this->dataGridView_gestcommande->RowTemplate->Height = 28;
+			this->dataGridView_gestcommande->Size = System::Drawing::Size(1730, 300);
+			this->dataGridView_gestcommande->TabIndex = 54;
 			// 
 			// Title_Gestion_Commandes
 			// 
@@ -2279,120 +2334,191 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			this->Title_Gestion_Stat->Text = L"Gestion Statistiques";
 			this->Title_Gestion_Stat->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// label2
+			// label_villesociete
 			// 
-			this->label2->AutoSize = true;
-			this->label2->BackColor = System::Drawing::Color::Transparent;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label_villesociete->AutoSize = true;
+			this->label_villesociete->BackColor = System::Drawing::Color::Transparent;
+			this->label_villesociete->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->ForeColor = System::Drawing::Color::White;
-			this->label2->Location = System::Drawing::Point(1515, 554);
-			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(49, 28);
-			this->label2->TabIndex = 116;
-			this->label2->Text = L"Ville";
+			this->label_villesociete->ForeColor = System::Drawing::Color::White;
+			this->label_villesociete->Location = System::Drawing::Point(1515, 554);
+			this->label_villesociete->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_villesociete->Name = L"label_villesociete";
+			this->label_villesociete->Size = System::Drawing::Size(49, 28);
+			this->label_villesociete->TabIndex = 116;
+			this->label_villesociete->Text = L"Ville";
 			// 
-			// label4
+			// label_adressepostsociete
 			// 
-			this->label4->AutoSize = true;
-			this->label4->BackColor = System::Drawing::Color::Transparent;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label_adressepostsociete->AutoSize = true;
+			this->label_adressepostsociete->BackColor = System::Drawing::Color::Transparent;
+			this->label_adressepostsociete->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label4->ForeColor = System::Drawing::Color::White;
-			this->label4->Location = System::Drawing::Point(1318, 556);
-			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(147, 28);
-			this->label4->TabIndex = 115;
-			this->label4->Text = L"Adresse Postale";
+			this->label_adressepostsociete->ForeColor = System::Drawing::Color::White;
+			this->label_adressepostsociete->Location = System::Drawing::Point(1318, 556);
+			this->label_adressepostsociete->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_adressepostsociete->Name = L"label_adressepostsociete";
+			this->label_adressepostsociete->Size = System::Drawing::Size(147, 28);
+			this->label_adressepostsociete->TabIndex = 115;
+			this->label_adressepostsociete->Text = L"Adresse Postale";
 			// 
-			// textBox1
+			// text_villesociete
 			// 
-			this->textBox1->Location = System::Drawing::Point(1520, 584);
-			this->textBox1->Margin = System::Windows::Forms::Padding(2);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(110, 26);
-			this->textBox1->TabIndex = 114;
+			this->text_villesociete->Location = System::Drawing::Point(1520, 584);
+			this->text_villesociete->Margin = System::Windows::Forms::Padding(2);
+			this->text_villesociete->Name = L"text_villesociete";
+			this->text_villesociete->Size = System::Drawing::Size(110, 26);
+			this->text_villesociete->TabIndex = 114;
 			// 
-			// textBox2
+			// text_adressepostsociete
 			// 
-			this->textBox2->Location = System::Drawing::Point(1323, 586);
-			this->textBox2->Margin = System::Windows::Forms::Padding(2);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(171, 26);
-			this->textBox2->TabIndex = 113;
+			this->text_adressepostsociete->Location = System::Drawing::Point(1323, 586);
+			this->text_adressepostsociete->Margin = System::Windows::Forms::Padding(2);
+			this->text_adressepostsociete->Name = L"text_adressepostsociete";
+			this->text_adressepostsociete->Size = System::Drawing::Size(171, 26);
+			this->text_adressepostsociete->TabIndex = 113;
 			// 
-			// label5
+			// label_payssociete
 			// 
-			this->label5->AutoSize = true;
-			this->label5->BackColor = System::Drawing::Color::Transparent;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label_payssociete->AutoSize = true;
+			this->label_payssociete->BackColor = System::Drawing::Color::Transparent;
+			this->label_payssociete->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label5->ForeColor = System::Drawing::Color::White;
-			this->label5->Location = System::Drawing::Point(1515, 640);
-			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(50, 28);
-			this->label5->TabIndex = 120;
-			this->label5->Text = L"Pays";
+			this->label_payssociete->ForeColor = System::Drawing::Color::White;
+			this->label_payssociete->Location = System::Drawing::Point(1515, 640);
+			this->label_payssociete->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_payssociete->Name = L"label_payssociete";
+			this->label_payssociete->Size = System::Drawing::Size(50, 28);
+			this->label_payssociete->TabIndex = 120;
+			this->label_payssociete->Text = L"Pays";
 			// 
-			// label6
+			// label_codepostsociete
 			// 
-			this->label6->AutoSize = true;
-			this->label6->BackColor = System::Drawing::Color::Transparent;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label_codepostsociete->AutoSize = true;
+			this->label_codepostsociete->BackColor = System::Drawing::Color::Transparent;
+			this->label_codepostsociete->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label6->ForeColor = System::Drawing::Color::White;
-			this->label6->Location = System::Drawing::Point(1318, 642);
-			this->label6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(125, 28);
-			this->label6->TabIndex = 119;
-			this->label6->Text = L"Code Postale";
+			this->label_codepostsociete->ForeColor = System::Drawing::Color::White;
+			this->label_codepostsociete->Location = System::Drawing::Point(1318, 642);
+			this->label_codepostsociete->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label_codepostsociete->Name = L"label_codepostsociete";
+			this->label_codepostsociete->Size = System::Drawing::Size(125, 28);
+			this->label_codepostsociete->TabIndex = 119;
+			this->label_codepostsociete->Text = L"Code Postale";
 			// 
-			// textBox3
+			// text_payssociete
 			// 
-			this->textBox3->Location = System::Drawing::Point(1520, 670);
-			this->textBox3->Margin = System::Windows::Forms::Padding(2);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(110, 26);
-			this->textBox3->TabIndex = 118;
+			this->text_payssociete->Location = System::Drawing::Point(1520, 670);
+			this->text_payssociete->Margin = System::Windows::Forms::Padding(2);
+			this->text_payssociete->Name = L"text_payssociete";
+			this->text_payssociete->Size = System::Drawing::Size(110, 26);
+			this->text_payssociete->TabIndex = 118;
 			// 
-			// textBox5
+			// text_codepostsociete
 			// 
-			this->textBox5->Location = System::Drawing::Point(1323, 672);
-			this->textBox5->Margin = System::Windows::Forms::Padding(2);
-			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(171, 26);
-			this->textBox5->TabIndex = 117;
+			this->text_codepostsociete->Location = System::Drawing::Point(1323, 672);
+			this->text_codepostsociete->Margin = System::Windows::Forms::Padding(2);
+			this->text_codepostsociete->Name = L"text_codepostsociete";
+			this->text_codepostsociete->Size = System::Drawing::Size(171, 26);
+			this->text_codepostsociete->TabIndex = 117;
 			// 
-			// bunifuThinButton25
+			// button2_nouveau
 			// 
-			this->bunifuThinButton25->ActiveBorderThickness = 1;
-			this->bunifuThinButton25->ActiveCornerRadius = 20;
-			this->bunifuThinButton25->ActiveFillColor = System::Drawing::Color::Transparent;
-			this->bunifuThinButton25->ActiveForecolor = System::Drawing::Color::White;
-			this->bunifuThinButton25->ActiveLineColor = System::Drawing::Color::SeaGreen;
-			this->bunifuThinButton25->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)),
-				static_cast<System::Int32>(static_cast<System::Byte>(51)), static_cast<System::Int32>(static_cast<System::Byte>(73)));
-			this->bunifuThinButton25->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"bunifuThinButton25.BackgroundImage")));
-			this->bunifuThinButton25->ButtonText = L"SUPPRIMER";
-			this->bunifuThinButton25->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->bunifuThinButton25->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button2_nouveau->ActiveBorderThickness = 1;
+			this->button2_nouveau->ActiveCornerRadius = 20;
+			this->button2_nouveau->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->button2_nouveau->ActiveForecolor = System::Drawing::Color::White;
+			this->button2_nouveau->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->button2_nouveau->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)), static_cast<System::Int32>(static_cast<System::Byte>(51)),
+				static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->button2_nouveau->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2_nouveau.BackgroundImage")));
+			this->button2_nouveau->ButtonText = L"NOUVEAU";
+			this->button2_nouveau->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button2_nouveau->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->bunifuThinButton25->ForeColor = System::Drawing::Color::White;
-			this->bunifuThinButton25->IdleBorderThickness = 1;
-			this->bunifuThinButton25->IdleCornerRadius = 20;
-			this->bunifuThinButton25->IdleFillColor = System::Drawing::Color::Transparent;
-			this->bunifuThinButton25->IdleForecolor = System::Drawing::Color::White;
-			this->bunifuThinButton25->IdleLineColor = System::Drawing::Color::White;
-			this->bunifuThinButton25->Location = System::Drawing::Point(1447, 764);
-			this->bunifuThinButton25->Margin = System::Windows::Forms::Padding(5);
-			this->bunifuThinButton25->Name = L"bunifuThinButton25";
-			this->bunifuThinButton25->Size = System::Drawing::Size(273, 72);
-			this->bunifuThinButton25->TabIndex = 121;
-			this->bunifuThinButton25->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->button2_nouveau->ForeColor = System::Drawing::Color::White;
+			this->button2_nouveau->IdleBorderThickness = 1;
+			this->button2_nouveau->IdleCornerRadius = 20;
+			this->button2_nouveau->IdleFillColor = System::Drawing::Color::Transparent;
+			this->button2_nouveau->IdleForecolor = System::Drawing::Color::White;
+			this->button2_nouveau->IdleLineColor = System::Drawing::Color::White;
+			this->button2_nouveau->Location = System::Drawing::Point(1447, 764);
+			this->button2_nouveau->Margin = System::Windows::Forms::Padding(5);
+			this->button2_nouveau->Name = L"button2_nouveau";
+			this->button2_nouveau->Size = System::Drawing::Size(273, 72);
+			this->button2_nouveau->TabIndex = 121;
+			this->button2_nouveau->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->BackColor = System::Drawing::Color::Transparent;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label7->ForeColor = System::Drawing::Color::White;
+			this->label7->Location = System::Drawing::Point(288, 415);
+			this->label7->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(182, 28);
+			this->label7->TabIndex = 123;
+			this->label7->Text = L"ID Adresse livraison";
+			// 
+			// textBox6
+			// 
+			this->textBox6->Location = System::Drawing::Point(293, 445);
+			this->textBox6->Margin = System::Windows::Forms::Padding(2);
+			this->textBox6->Name = L"textBox6";
+			this->textBox6->Size = System::Drawing::Size(177, 26);
+			this->textBox6->TabIndex = 122;
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->BackColor = System::Drawing::Color::Transparent;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Segoe UI", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label8->ForeColor = System::Drawing::Color::White;
+			this->label8->Location = System::Drawing::Point(499, 415);
+			this->label8->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(204, 28);
+			this->label8->TabIndex = 125;
+			this->label8->Text = L"ID Adresse facturation";
+			// 
+			// textBox13
+			// 
+			this->textBox13->Location = System::Drawing::Point(504, 445);
+			this->textBox13->Margin = System::Windows::Forms::Padding(2);
+			this->textBox13->Name = L"textBox13";
+			this->textBox13->Size = System::Drawing::Size(196, 26);
+			this->textBox13->TabIndex = 124;
+			// 
+			// button1_nouveau
+			// 
+			this->button1_nouveau->ActiveBorderThickness = 1;
+			this->button1_nouveau->ActiveCornerRadius = 20;
+			this->button1_nouveau->ActiveFillColor = System::Drawing::Color::Transparent;
+			this->button1_nouveau->ActiveForecolor = System::Drawing::Color::White;
+			this->button1_nouveau->ActiveLineColor = System::Drawing::Color::SeaGreen;
+			this->button1_nouveau->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(46)), static_cast<System::Int32>(static_cast<System::Byte>(51)),
+				static_cast<System::Int32>(static_cast<System::Byte>(73)));
+			this->button1_nouveau->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1_nouveau.BackgroundImage")));
+			this->button1_nouveau->ButtonText = L"NOUVEAU";
+			this->button1_nouveau->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button1_nouveau->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1_nouveau->ForeColor = System::Drawing::Color::White;
+			this->button1_nouveau->IdleBorderThickness = 1;
+			this->button1_nouveau->IdleCornerRadius = 20;
+			this->button1_nouveau->IdleFillColor = System::Drawing::Color::Transparent;
+			this->button1_nouveau->IdleForecolor = System::Drawing::Color::White;
+			this->button1_nouveau->IdleLineColor = System::Drawing::Color::White;
+			this->button1_nouveau->Location = System::Drawing::Point(1436, 782);
+			this->button1_nouveau->Margin = System::Windows::Forms::Padding(5);
+			this->button1_nouveau->Name = L"button1_nouveau";
+			this->button1_nouveau->Size = System::Drawing::Size(273, 72);
+			this->button1_nouveau->TabIndex = 122;
+			this->button1_nouveau->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// Dashboard
 			// 
@@ -2422,7 +2548,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView_gestclient))->EndInit();
 			this->Panel_Gestion_Commandes->ResumeLayout(false);
 			this->Panel_Gestion_Commandes->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView_gestcommande))->EndInit();
 			this->panel_Gestion_Stock->ResumeLayout(false);
 			this->Panel_Gestion_Stat->ResumeLayout(false);
 			this->ResumeLayout(false);
@@ -2470,7 +2596,7 @@ private: Bunifu::Framework::UI::BunifuThinButton2^ bunifuThinButton25;
 				this->Panel_Gestion_Stat->Visible = true;
 			}
 			private: System::Void Click_Btn_Exit_DB(System::Object^ sender, System::EventArgs^ e) {
-			this->Close();
+				Application::Exit();
 			}
 			private: System::Void btn_nouveau_Click(System::Object^ sender, System::EventArgs^ e) {
 				this->text_personnel->Clear();

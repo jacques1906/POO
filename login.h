@@ -43,6 +43,7 @@ namespace POO {
 	private: Bunifu::Framework::UI::BunifuThinButton2^ btn_login;
 	private: Bunifu::Framework::UI::BunifuTextbox^ write_password;
 	private: Bunifu::Framework::UI::BunifuThinButton2^ btn_cancel;
+	private: System::Windows::Forms::Panel^ panel2;
 
 
 
@@ -69,12 +70,14 @@ namespace POO {
 			this->write_password = (gcnew Bunifu::Framework::UI::BunifuTextbox());
 			this->write_Username = (gcnew Bunifu::Framework::UI::BunifuTextbox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// panel1
 			// 
 			this->panel1->BackColor = System::Drawing::Color::Transparent;
+			this->panel1->Controls->Add(this->panel2);
 			this->panel1->Controls->Add(this->btn_cancel);
 			this->panel1->Controls->Add(this->btn_login);
 			this->panel1->Controls->Add(this->write_password);
@@ -107,8 +110,8 @@ namespace POO {
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->btn_cancel->IdleForecolor = System::Drawing::Color::White;
 			this->btn_cancel->IdleLineColor = System::Drawing::Color::White;
-			this->btn_cancel->Location = System::Drawing::Point(306, 439);
-			this->btn_cancel->Margin = System::Windows::Forms::Padding(8, 8, 8, 8);
+			this->btn_cancel->Location = System::Drawing::Point(319, 793);
+			this->btn_cancel->Margin = System::Windows::Forms::Padding(8);
 			this->btn_cancel->Name = L"btn_cancel";
 			this->btn_cancel->Size = System::Drawing::Size(272, 63);
 			this->btn_cancel->TabIndex = 4;
@@ -136,8 +139,8 @@ namespace POO {
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->btn_login->IdleForecolor = System::Drawing::Color::White;
 			this->btn_login->IdleLineColor = System::Drawing::Color::White;
-			this->btn_login->Location = System::Drawing::Point(8, 439);
-			this->btn_login->Margin = System::Windows::Forms::Padding(8, 8, 8, 8);
+			this->btn_login->Location = System::Drawing::Point(21, 793);
+			this->btn_login->Margin = System::Windows::Forms::Padding(8);
 			this->btn_login->Name = L"btn_login";
 			this->btn_login->Size = System::Drawing::Size(272, 63);
 			this->btn_login->TabIndex = 3;
@@ -152,7 +155,7 @@ namespace POO {
 			this->write_password->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->write_password->ForeColor = System::Drawing::Color::MintCream;
 			this->write_password->Icon = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"write_password.Icon")));
-			this->write_password->Location = System::Drawing::Point(122, 307);
+			this->write_password->Location = System::Drawing::Point(135, 661);
 			this->write_password->Margin = System::Windows::Forms::Padding(9, 10, 9, 10);
 			this->write_password->Name = L"write_password";
 			this->write_password->Size = System::Drawing::Size(375, 65);
@@ -168,7 +171,7 @@ namespace POO {
 			this->write_Username->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->write_Username->ForeColor = System::Drawing::Color::MintCream;
 			this->write_Username->Icon = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"write_Username.Icon")));
-			this->write_Username->Location = System::Drawing::Point(122, 165);
+			this->write_Username->Location = System::Drawing::Point(135, 519);
 			this->write_Username->Margin = System::Windows::Forms::Padding(9, 10, 9, 10);
 			this->write_Username->Name = L"write_Username";
 			this->write_Username->Size = System::Drawing::Size(375, 65);
@@ -181,13 +184,22 @@ namespace POO {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI Black", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(216, 57);
+			this->label1->Location = System::Drawing::Point(229, 411);
 			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(211, 74);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"LOGIN";
 			this->label1->Click += gcnew System::EventHandler(this, &login::Write_Password);
+			// 
+			// panel2
+			// 
+			this->panel2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel2.BackgroundImage")));
+			this->panel2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
+			this->panel2->Location = System::Drawing::Point(33, 25);
+			this->panel2->Name = L"panel2";
+			this->panel2->Size = System::Drawing::Size(558, 367);
+			this->panel2->TabIndex = 5;
 			// 
 			// login
 			// 
