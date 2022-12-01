@@ -1039,7 +1039,6 @@ private: System::Windows::Forms::TextBox^ text_idadressefacturation;
 			this->labelchampclient->Size = System::Drawing::Size(166, 32);
 			this->labelchampclient->TabIndex = 39;
 			this->labelchampclient->Text = L"Champ Client";
-			this->labelchampclient->Click += gcnew System::EventHandler(this, &Dashboard::label19_Click);
 			// 
 			// label18
 			// 
@@ -1052,7 +1051,6 @@ private: System::Windows::Forms::TextBox^ text_idadressefacturation;
 			this->label18->Size = System::Drawing::Size(273, 32);
 			this->label18->TabIndex = 38;
 			this->label18->Text = L"Adresse de facturation";
-			this->label18->Click += gcnew System::EventHandler(this, &Dashboard::label18_Click);
 			// 
 			// label17
 			// 
